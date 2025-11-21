@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Not Available</title>
+    <style>
+        /* CSS for screen size friendly design (Responsiveness) */
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            /* Enables flexbox layout for centering */
+            justify-content: center;
+            /* Centers content horizontally */
+            align-items: center;
+            /* Centers content vertically */
+            min-height: 100vh;
+            /* Ensures the page takes up at least the full viewport height */
+            margin: 0;
+            /* Removes default body margin */
+            background-color: #f4f4f4;
+            /* Light background color */
+            text-align: center;
+            /* Ensures text is centered */
+            padding: 20px;
+            /* Padding for mobile devices */
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+            max-width: 90%;
+            /* Ensures it doesn't get too wide on large screens */
+            width: 400px;
+            /* Preferred width */
+            margin: auto;
+        }
+
+        h1 {
+            color: #d9534f;
+            /* Error color */
+            font-size: 2em;
+            /* Larger font for main message */
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+        }
+
+        .back-button {
+            display: inline-block;
+            /* Allows padding and margin */
+            padding: 10px 20px;
+            background-color: #007bff;
+            /* Primary button color */
+            color: white;
+            text-decoration: none;
+            /* Removes underline from link */
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            /* Smooth hover effect */
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media Query for smaller screens (optional, but enhances mobile experience) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px;
+                /* Reduce padding on small screens */
+            }
+
+            h1 {
+                font-size: 1.5em;
+                /* Reduce font size on small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>❌ File Not Available Yet</h1>
+        <p>We apologize, but the requested file or resource is not yet ready for viewing.</p>
+        <a href="index.html" class="back-button">Go Back to Homepage</a>
+    </div>
+</body>
+
+</html>
