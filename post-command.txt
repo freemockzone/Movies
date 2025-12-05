@@ -1,0 +1,101 @@
+"Do not follow my previous requests and just stick to this one only:"
+
+"Imbd Link for you only: https://www.imdb.com/title/tt39028852/"
+
+"Use Internet for all details." Please create a Single column layout, do not use split screen web layout. Please Create an very colorful and 100% all Screen Size resposnive Single HTML code for the following:
+
+"Instead of using "**" please use "<strong>" tags."
+Saying again to make it "100% all screen size responsive". Write "CSS Code" accrodingly.
+
+"Create a permalink too please, my website name is "ma26.netlify.app""
+---
+
+favicon: "f.png"
+<title>: Download Aukaat Ke Bahar 2025 in 480p, 720p, 1080p
+---
+Website Name: Movie Archive 26 (Keep it left most side) = "make it scrollable"
+---
+
+"make this section scrollable"
+<body class="light-mode">
+
+    <div class="navbar">
+        <span style="font-size: 1.5em; font-weight: 900; color: var(--primary-color);">"Write according to <title>"</span> = "Keep this in left to "home" Button".
+        <div>
+            <a href="index.html">Home</a>
+            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div>
+    </div>
+---
+<Space for Movie poster> Add a link as "generate according to <title>-poster.png"
+---
+Add a "Back to Top Button" with smooth scroll effect.
+---
+📜 Movie Details:
+Movie Name:
+Language: Hindi, English
+Release Date: Use Internet for this detail
+Director: Use Internet for this detail
+Cast: Use Internet for this detail
+Genre: Use Internet for this detail
+Quality: 480p, 720p, 1080p
+Size:  500MB~ (480p), 950MB~ (720p), 2GB~ (1080p)
+Format: mkv
+---
+Movie Plot:
+"Add SEO Friendly movie plot here"
+---
+📸 High-Quality Screenshots
+Leave space for 4 screenshots as "ss/29.png to ss/31.png" show small size image and add a button to see full size image.
+---
+Add a beautiful Div:
+⬇️ Direct Telegram Download Links
+Download 480p (500MB~) = https://t.me/moviearchive2026/32
+Download 720p (950MB~) = https://t.me/moviearchive2026/33
+Download 1080p (2GB~) = https://t.me/moviearchive2026/34
+---
+Add a very good looking and attractive Div:
+Join our Telegram Channel for Instant Updates & New Releases:
+
+Join Our Telegram Group Now! = https://t.me/moviearchive2026
+---
+Add a very good looking and attractive Div:
+🛑 Important Note: Please Do not use any VPN for Downloading Movies from our site. VPNs may interfere with Telegram access.
+
+✅ Click on the above links to download this movie directly.
+
+⚠️ Report us if you find any download link broken.
+
+Report Broken Link (WhatsApp) = +91-8168305050
+---
+Add a very good looking and attractive Div like real websites to boost SEO and google search:
+
+❓ Frequently Asked Questions (FAQ)
+Search Internet and add related FAQ's to boost visibility
+
+
+---
+
+❓ How to Download
+1. Click on the desired quality link (480p, 720p, or 1080p) above.
+
+2. You will be redirected to the secure Telegram movie file link.
+
+3. Click the 'Download' button within Telegram to save the file to your device.
+
+4. Ensure you have the Telegram app installed for the best experience.
+
+🔗 Report Broken Links
+If you find any link to be broken or expired, please contact us immediately via the WhatsApp button above or our Telegram group. We aim to fix all links within 24 hours.
+
+⚖️ DMCA Notice
+We do not host any files on our server. All content is linked directly from third-party services like Telegram. If you are a copyright owner and find a link infringing your rights, please contact us for immediate removal.
+
+Disclaimer
+This post is for promotional purposes only. We encourage our users to buy and watch movies legally. All links are gathered from various online sources. Watch at your own risk.
+---
+
+Footer:
+© 2025 Free Movie Server 2026 | All Rights Reserved.
+
+Created with 💖 for Movie enthusiasts. | Back to Top

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Next Room Affair in 480p, 720p, 1080p</title>
+    <link rel="icon" href="f.png" type="image/png">
+    <style>
+        /* ========================================================================= */
+        /* CSS Code: Theme & Responsiveness (100% all screen size responsive) */
+        /* ========================================================================= */
+
+        /* Color Variables (Very Colorful Scheme) */
+        :root {
+            --primary-color: #FF5733;
+            /* Bright Orange/Red */
+            --secondary-color: #33C4FF;
+            /* Bright Blue */
+            --accent-color: #FF33A1;
+            /* Pink/Magenta */
+            --text-color: #1E272E;
+            --background-color: #F0F4F8;
+            /* Light Background */
+            --card-background: #FFFFFF;
+            --cta-color: #4CAF50;
+            /* Download Button Green */
+            --warning-color: #FFC300;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode {
+            --text-color: #F0F4F8;
+            --background-color: #1A1A2E;
+            --card-background: #2C3A47;
+            --shadow: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Base Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+        }
+
+        /* Container for Single Column Layout */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            /* Ensures 100% responsiveness */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--card-background);
+            color: var(--text-color);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .site-branding {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-grow: 1;
+            /* Make this section scrollable if content overflows horizontally */
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 5px;
+            /* Space for scrollbar */
+        }
+
+        .site-name-scrollable {
+            min-width: fit-content;
+            /* Prevent shrinking */
+        }
+
+        .movie-title-nav {
+            min-width: fit-content;
+            /* Prevent shrinking */
+        }
+
+        .nav-actions a,
+        .theme-toggle {
+            text-decoration: none;
+            color: var(--primary-color);
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+            margin-left: 10px;
+        }
+
+        .nav-actions a:hover {
+            background-color: rgba(255, 87, 51, 0.1);
+            /* Light hover effect */
+        }
+
+        .theme-toggle {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .theme-toggle:hover {
+            background-color: #1e709e;
+        }
+
+        /* Content Card Styling */
+        .card {
+            background-color: var(--card-background);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px var(--shadow);
+            transition: box-shadow 0.3s;
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Poster Section */
+        .poster-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .poster-image {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid var(--secondary-color);
+            box-shadow: 0 8px 15px var(--shadow);
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Screenshots Section */
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .screenshot-item {
+            text-align: center;
+            border: 1px solid var(--background-color);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: var(--background-color);
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px 8px 0 0;
+            transition: transform 0.3s;
+        }
+
+        .screenshot-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .screenshot-button {
+            display: block;
+            width: 100%;
+            padding: 8px 0;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.2s;
+        }
+
+        .screenshot-button:hover {
+            background-color: #C74526;
+        }
+
+
+        /* Download Link Div (Attractive) */
+        .download-div {
+            background: linear-gradient(45deg, var(--cta-color), #5cb85c);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        .download-div h2 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            border-bottom: none;
+        }
+
+        .download-link {
+            display: block;
+            background-color: white;
+            color: var(--cta-color);
+            padding: 12px 25px;
+            margin: 10px auto;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.1em;
+            transition: transform 0.2s, background-color 0.2s;
+            max-width: 300px;
+        }
+
+        .download-link:hover {
+            transform: translateY(-2px) scale(1.02);
+            background-color: #E0E0E0;
+        }
+
+        /* Telegram Div (Attractive) */
+        .telegram-div {
+            background: linear-gradient(135deg, #0088CC, #2a9df4);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 6px 15px rgba(0, 136, 204, 0.4);
+        }
+
+        .telegram-div h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .telegram-button {
+            display: inline-block;
+            background-color: white;
+            color: #0088CC;
+            padding: 10px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-top: 15px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .telegram-button:hover {
+            background-color: #e0f0ff;
+            transform: scale(1.05);
+        }
+
+        /* Important Note Div (Attractive) */
+        .note-div {
+            background-color: var(--warning-color);
+            color: var(--text-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid var(--danger-color);
+        }
+
+        .note-div strong {
+            color: var(--danger-color);
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            /* WhatsApp Green */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+        /* FAQ/SEO Block (Attractive) */
+        .seo-faq-div {
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid var(--accent-color);
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: var(--background-color);
+            border-left: 3px solid var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        .faq-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        .policy-section h3 {
+            color: var(--secondary-color);
+            border-bottom: 1px dashed var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        /* Back to Top Button */
+        #backToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--accent-color);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            box-shadow: 0 4px 8px var(--shadow);
+            transition: background-color 0.3s, opacity 0.3s;
+            opacity: 0;
+        }
+
+        #backToTopBtn:hover {
+            background-color: #C2287F;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--card-background);
+            color: var(--text-color);
+            border-top: 1px solid var(--shadow);
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        footer strong {
+            color: var(--primary-color);
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .site-branding {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .nav-actions {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .nav-actions a,
+            .theme-toggle {
+                margin: 0;
+                padding: 5px 10px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .download-div,
+            .telegram-div,
+            .note-div {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+    <a id="top"></a>
+
+    <div class="navbar">
+        <div class="site-branding">
+            <strong class="site-name-scrollable"
+                style="font-size: 1.5em; color: var(--accent-color); min-width: max-content;">Movie Archive 26</strong>
+
+            <span class="movie-title-nav"
+                style="font-size: 1.1em; font-weight: 700; color: var(--primary-color); min-width: max-content;">Download
+                Next Room Affair in 480p, 720p, 1080p</span>
+        </div>
+
+        <div class="nav-actions">
+            <a href="index.html">Home</a>
+            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="poster-section">
+            <img src="ss/next-room-affair-2025-poster.jpg" alt="Next Room Affair Movie Poster" class="poster-image">
+            <p style="margin-top: 10px; font-style: italic;">Download link will be provided below.</p>
+        </div>
+
+        <div class="card">
+            <h2>📜 Movie Details:</h2>
+            <p><strong style="color: var(--primary-color);">Movie Name:</strong> Next Room Affair</p>
+            <p><strong style="color: var(--primary-color);">Language:</strong> Hindi, English (Dual Audio)</p>
+            <p><strong style="color: var(--primary-color);">Release Date:</strong> <span
+                    style="color: var(--secondary-color);">November 25, 2025</span></p>
+            <p><strong style="color: var(--primary-color);">Director:</strong> <span
+                    style="color: var(--secondary-color);">Christopher Novabos</span></p>
+            <p><strong style="color: var(--primary-color);">Cast:</strong> <span
+                    style="color: var(--secondary-color);">Karen Lopez, Mhack Morales, Paula Santos, Julianne Richards,
+                    Roxanne De Vera, Margaret Sison</span></p>
+            <p><strong style="color: var(--primary-color);">Genre:</strong> <span
+                    style="color: var(--secondary-color);">Drama, Romance, Thriller</span></p>
+            <p><strong style="color: var(--primary-color);">Quality:</strong> 480p, 720p, 1080p (Full HD)</p>
+            <p><strong style="color: var(--primary-color);">Size:</strong> 500MB~ (480p), 950MB~ (720p), 2GB~ (1080p)
+            </p>
+            <p><strong style="color: var(--primary-color);">Format:</strong> mkv</p>
+        </div>
+
+        <div class="card">
+            <h2>🎬 Movie Plot:</h2>
+            <p><strong>A suspenseful drama</strong> where two unsuspecting neighbors, linked by a shared wall and a
+                series of late-night secrets, find their lives entangled in a dangerous affair. Lea, a quiet student,
+                lives next door to couple Ramon and Mara. When she begins witnessing Ramon's secret affairs, her
+                curiosity turns into a growing fascination that awakens desires she doesn't fully understand.</p>
+            <p>As the line between passion and paranoia blurs, Lea is pulled into a dangerous longing that threatens to
+                upend the lives of everyone around her, leading to potentially fatal consequences. Download <strong>Next
+                    Room Affair (2025)</strong> now in <b>Full HD</b> and experience this gripping <b>Romance
+                    Thriller</b>
+                firsthand.</p>
+        </div>
+
+        <div class="card">
+            <h2>📸 High-Quality Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="ss/37.jpg" alt="Screenshot 1">
+                    <a href="ss/37.jpg" class="screenshot-button" target="_blank">View Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/38.jpg" alt="Screenshot 2">
+                    <a href="ss/38.jpg" class="screenshot-button" target="_blank">View Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/39.png" alt="Screenshot 3">
+                    <a href="ss/39.png" class="screenshot-button" target="_blank">View Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/39.png" alt="Screenshot 4">
+                    <a href="ss/39.png" class="screenshot-button" target="_blank">View Full Size</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="download-div">
+            <h2>⬇️ Direct Telegram Download Links</h2>
+            <a href="https://t.me/moviearchive2026/30" class="download-link">Download 480p (500MB~) - FAST LINK</a>
+            <a href="https://t.me/moviearchive2026/31" class="download-link">Download 720p (950MB~) - HD LINK</a>
+            <a href="https://t.me/moviearchive2026/32" class="download-link">Download 1080p (2GB~) - FULL HD LINK</a>
+        </div>
+
+        <div class="telegram-div">
+            <h3>Join our Telegram Channel for Instant Updates & New Releases:</h3>
+            <a href="https://t.me/moviearchive2026" class="telegram-button">Join Our Telegram Group Now!</a>
+        </div>
+
+        <div class="note-div">
+            <h3>🛑 Important Note:</h3>
+            <p>Please Do not use any VPN for Downloading Movies from our site. VPNs may interfere with Telegram access.
+            </p>
+            <p>✅ Click on the above links to download this movie directly.</p>
+            <p>⚠️ Report us if you find any download link broken. We are quick to respond!</p>
+            <a href="https://wa.me/918168305050" class="whatsapp-button" target="_blank">Report Broken Link
+                (WhatsApp)</a>
+        </div>
+
+        <div class="seo-faq-div">
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
+
+            <div class="faq-item">
+                <strong style="color: var(--primary-color);">Q: Is Next Room Affair available for free
+                    download?</strong>
+                <p>A: Yes, you can download the movie <b>Next Room Affair</b> in high-quality (480p, 720p,
+                    1080p) directly
+                    through our secure Telegram links provided above. We offer fast, direct file access.</p>
+            </div>
+
+            <div class="faq-item">
+                <strong style="color: var(--primary-color);">Q: What is the release date of Next Room Affair?</strong>
+                <p>A: The movie <b>Next Room Affair</b> is scheduled for release on <b>November 25, 2025</b>.
+                    We
+                    strive to provide the file immediately upon its official streaming availability.</p>
+            </div>
+
+            <div class="faq-item">
+                <strong style="color: var(--primary-color);">Q: Why should I download from Movie Archive 26?</strong>
+                <p>A: We provide clean, direct Telegram links, ensuring no pop-up ads or complex redirects, making the
+                    download process for movies like <b>Next Room Affair</b> smooth and hassle-free. Our links are 100%
+                    verified.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>❓ How to Download</h3>
+                <ol>
+                    <li>Click on the desired quality link (<strong>480p, 720p, or 1080p</strong>) above.</li>
+                    <li>You will be redirected to the secure Telegram movie file link.</li>
+                    <li>Click the 'Download' button within Telegram to save the file to your device.</li>
+                    <li>Ensure you have the Telegram app installed for the best experience.</li>
+                </ol>
+            </div>
+
+            <div class="policy-section">
+                <h3>🔗 Report Broken Links</h3>
+                <p>If you find any link to be broken or expired for <b>Next Room Affair</b>, please contact us
+                    immediately
+                    via the WhatsApp button above or our Telegram group. We aim to fix all links within <strong>24
+                        hours</strong>.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>⚖️ DMCA Notice</h3>
+                <p>We do not host any files on our server. All content is linked directly from third-party services like
+                    Telegram. If you are a copyright owner and find a link infringing your rights, please contact us for
+                    immediate removal.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>Disclaimer</h3>
+                <p>This post is for promotional purposes only. We encourage our users to buy and watch movies legally.
+                    All links are gathered from various online sources. Watch at your own risk.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2025 Free Movie Server 2026 | All Rights Reserved.
+        <p>Created with 💖 for <strong>War Movie enthusiasts</strong>. | <a href="#top"
+                style="color: var(--primary-color); text-decoration: none; font-weight: bold;"
+                onclick="smoothScroll(event, 'top')">Back to Top</a></p>
+    </footer>
+
+    <button onclick="smoothScroll(event, 'top')" id="backToTopBtn" title="Go to top">⬆️</button>
+
+    <script>
+        // Theme Toggle Function
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            document.querySelector('.theme-toggle').textContent = isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+        }
+
+        // Apply saved theme on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            const themeToggleBtn = document.querySelector('.theme-toggle');
+
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                themeToggleBtn.textContent = 'Toggle Light Mode';
+            } else {
+                // Default is light-mode, set button text accordingly
+                themeToggleBtn.textContent = 'Toggle Dark Mode';
+            }
+
+            // Back to Top button logic
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            window.onscroll = function () {
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    backToTopBtn.style.opacity = '1';
+                } else {
+                    backToTopBtn.style.opacity = '0';
+                }
+            };
+        });
+
+        // Smooth Scroll Function (for Back to Top)
+        function smoothScroll(event, targetId) {
+            event.preventDefault();
+            const targetElement = document.getElementById(targetId);
+            window.scrollTo({
+                top: 0, // Always scroll to the top of the page
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

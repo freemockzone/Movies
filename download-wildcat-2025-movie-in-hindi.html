@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildcat 2025 Download</title>
+    <link rel="icon" href="f.png" type="image/png">
+    <style>
+        /* --- CSS Variables for Theme & Colors --- */
+        :root {
+            --light-bg: #f4f7fa;
+            --light-text: #1a1a1a;
+            --light-primary: #3498db;
+            /* Blue */
+            --light-secondary: #2ecc71;
+            /* Green */
+            --light-card-bg: #ffffff;
+            --light-hover-bg: #e9eff5;
+            --light-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode {
+            --light-bg: #1a202c;
+            --light-text: #f0f0f0;
+            --light-primary: #9b59b6;
+            /* Purple */
+            --light-secondary: #f39c12;
+            /* Orange */
+            --light-card-bg: #2d3748;
+            --light-hover-bg: #4a5568;
+            --light-shadow: rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- Global Styles --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            /* Scroll behavior for smooth 'Back to Top' */
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+            /* 100% all screen size responsive */
+        }
+
+        a {
+            color: var(--light-primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--light-secondary);
+            text-decoration: underline;
+        }
+
+        /* --- Navbar Styles (Sticky and Responsive) --- */
+        .navbar {
+            background-color: var(--light-card-bg);
+            color: var(--light-text);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px var(--light-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-scroll-wrapper {
+            /* Make Website Name scrollable */
+            white-space: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-right: 10px;
+        }
+
+        .logo-scroll-wrapper::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        .logo-scroll-wrapper::-webkit-scrollbar-thumb {
+            background: var(--light-primary);
+            border-radius: 2px;
+        }
+
+        .navbar-links a,
+        .theme-toggle {
+            padding: 8px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            /* Corrected to 'bold' */
+            transition: background-color 0.2s;
+        }
+
+        .navbar-links a:hover,
+        .theme-toggle:hover {
+            background-color: var(--light-hover-bg);
+        }
+
+        .theme-toggle {
+            background-color: var(--light-primary);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--light-secondary);
+        }
+
+        /* --- Main Content Layout (Responsive Grid) --- */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        /* Adjusting for larger screens */
+        @media (min-width: 768px) {
+            .main-content {
+                grid-template-columns: 2fr 1fr;
+                /* Movie details on left, poster on right */
+            }
+        }
+
+        .movie-poster-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--light-shadow);
+            order: -1;
+            /* Place poster on top for mobile */
+        }
+
+        @media (min-width: 768px) {
+            .movie-poster-container {
+                order: 1;
+                /* Move poster to the right on desktop */
+            }
+        }
+
+        .movie-poster-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- Card Styles (Beautiful Divs) --- */
+        .card,
+        .faq-item,
+        .how-to-download,
+        .important-note {
+            background-color: var(--light-card-bg);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px var(--light-shadow);
+            margin-bottom: 25px;
+        }
+
+        .card h2,
+        .card h3 {
+            color: var(--light-primary);
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--light-hover-bg);
+            padding-bottom: 5px;
+        }
+
+        /* Download Links Specific Styling */
+        .download-links a {
+            display: block;
+            background-color: var(--light-primary);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            /* Corrected to 'bold' */
+            transition: background-color 0.2s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .download-links a:hover {
+            background-color: var(--light-secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px var(--light-shadow);
+            text-decoration: none;
+        }
+
+        /* Telegram Join Button Specific Styling */
+        .telegram-join {
+            text-align: center;
+            background: linear-gradient(45deg, #0088cc, #48bfe3);
+            /* Telegram colors */
+            color: white;
+            padding: 30px;
+        }
+
+        .telegram-join a {
+            display: inline-block;
+            background-color: white;
+            color: #0088cc;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            /* Corrected to 'bold' */
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .telegram-join a:hover {
+            background-color: #f4f4f4;
+            color: #006699;
+            transform: scale(1.05);
+            text-decoration: none;
+        }
+
+        /* Important Note Styling */
+        .important-note {
+            border-left: 5px solid var(--light-secondary);
+        }
+
+        .important-note strong {
+            color: var(--light-primary);
+        }
+
+        /* FAQ Styling for SEO */
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            cursor: pointer;
+            border-left: 4px solid var(--light-secondary);
+            margin-bottom: 15px;
+            overflow: hidden;
+            padding: 15px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            /* Corrected to 'bold' */
+            color: var(--light-text);
+            display: block;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, padding 0.4s;
+            padding: 0 5px;
+            margin-top: 5px;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+            /* Arbitrary value larger than content */
+            opacity: 1;
+            visibility: visible;
+            padding-top: 10px;
+        }
+
+        .faq-item:hover {
+            background-color: var(--light-hover-bg);
+        }
+
+        /* Screenshots Section */
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .screenshot-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px var(--light-shadow);
+            background-color: var(--light-card-bg);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .screenshot-item a {
+            display: inline-block;
+            background-color: var(--light-secondary);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
+        }
+
+        .screenshot-item a:hover {
+            background-color: var(--light-primary);
+            text-decoration: none;
+        }
+
+        /* --- Back to Top Button --- */
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--light-primary);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            line-height: 0;
+            box-shadow: 0 4px 8px var(--light-shadow);
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+
+        #backToTopBtn:hover {
+            background-color: var(--light-secondary);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--light-card-bg);
+            color: var(--light-text);
+            text-align: center;
+            padding: 20px 10px;
+            border-top: 1px solid var(--light-hover-bg);
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--light-primary);
+            font-weight: bold;
+            /* Corrected to 'bold' */
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">⬆️</button>
+
+    <header class="navbar">
+        <div style="display: flex; align-items: center;">
+            <div class="logo-scroll-wrapper">
+                <span style="font-size: 1.2em; font-weight: 600; color: var(--light-text); margin-right: 20px;">Movie
+                    Archive 26</span>
+            </div>
+            <span style="font-size: 1.5em; font-weight: 900; color: var(--light-primary); white-space: nowrap;">Wildcat
+                2025</span>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <main class="main-content">
+
+            <section class="movie-info-section">
+
+                <div class="card">
+                    <h2>📜 Movie Details:</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>Movie Name:</strong> Wildcat 2025</li>
+                        <li><strong>Language:</strong> Hindi, English</li>
+                        <li><strong>Release Date:</strong> September 15, 2023 (Used for Wildcat - 2023)</li>
+                        <li><strong>Director:</strong> Ethan Hawke</li>
+                        <li><strong>Cast:</strong> Maya Hawke, Laura Linney, Philip Ettinger</li>
+                        <li><strong>Genre:</strong> Biography, Drama</li>
+                        <li><strong>Quality:</strong> 480p, 720p, 1080p</li>
+                        <li><strong>Size:</strong> 500MB~ (480p), 1.3GB~ (720p), 3GB~ (1080p)</li>
+                        <li><strong>Format:</strong> mkv</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>✍️ Movie Plot:</h2>
+                    <p><strong>Wildcat 2025</strong> is a biographical drama that delves into the life and struggles of
+                        celebrated American author <strong>Flannery O'Connor</strong>. The film, directed by Ethan Hawke
+                        and starring his daughter, Maya Hawke, follows O'Connor as she battles lupus and tries to get
+                        her first novel published in the 1950s.</p>
+                    <p>It's a powerful, <strong>SEO-friendly</strong> exploration of faith, art, and the creative
+                        process, showcasing O'Connor's unique and often dark literary vision. The plot weaves together
+                        dramatizations of O'Connor's short stories with moments from her personal life, providing an
+                        insightful look into the mind of one of the 20th century's most significant writers. It is a
+                        must-watch for fans of deep character studies and literary history.</p>
+                </div>
+
+                <div class="card download-links">
+                    <h2>⬇️ Direct Telegram Download Links</h2>
+                    <a href="https://t.me/moviearchive2026/18" target="_blank">Download 480p (500MB~)</a>
+                    <a href="https://t.me/moviearchive2026/18" target="_blank">Download 720p (1.3GB~)</a>
+                    <a href="https://t.me/moviearchive2026/18" target="_blank">Download 1080p (4GB~)</a>
+                </div>
+
+                <div class="important-note">
+                    <h2>🛑 Important Note:</h2>
+                    <p>Please Do not use any <strong>VPN</strong> for Downloading Movies from our site. VPNs may
+                        interfere with Telegram access.</p>
+                    <p>✅ Click on the above links to download this movie directly.</p>
+                    <p>⚠️ Report us if you find any download link broken.</p>
+                    <p style="margin-top: 15px;"><a href="https://wa.me/918168305050" target="_blank"
+                            style="background-color: #25D366; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">Report
+                            Broken Link (WhatsApp)</a></p>
+                </div>
+
+            </section>
+
+            <aside class="movie-poster-container">
+                <img src="ss/wildcat-2025-movie-poster.jpg" alt="Wildcat 2025 Movie Poster">
+            </aside>
+
+        </main>
+
+        <div class="telegram-join">
+            <h2>Join our Telegram Channel for Instant Updates & New Releases:</h2>
+            <a href="https://t.me/moviearchive2026" target="_blank">Join Our Telegram Group Now! ✨</a>
+        </div>
+
+        <div class="card" style="margin-top: 25px;">
+            <h2>📸 High-Quality Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="ss/29.jpg" alt="Screenshot 1">
+                    <a href="ss/29.jpg" target="_blank">See Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/30.png" alt="Screenshot 2">
+                    <a href="ss/30.png" target="_blank">See Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/31.png" alt="Screenshot 3">
+                    <a href="ss/31.png" target="_blank">See Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/32.jpg" alt="Screenshot 4">
+                    <a href="ss/32.jpg" target="_blank">See Full Size</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card faq-section">
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
+
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <span class="faq-question">Is Wildcat 2025 a true story?</span>
+                <p class="faq-answer">Yes, the film Wildcat is based on the life of Southern gothic writer
+                    <strong>Flannery O'Connor</strong> (1925-1964). It interweaves her personal struggles with her
+                    literary work, making it a powerful biographical drama.
+                </p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <span class="faq-question">Is the Wildcat 2025 movie streaming anywhere?</span>
+                <p class="faq-answer">As of now, Wildcat (2023) may be available on select rental platforms or streaming
+                    services. Please check major providers like Netflix, Hulu, or Max for the most up-to-date streaming
+                    availability in your region.</p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <span class="faq-question">Why is Wildcat rated R?</span>
+                <p class="faq-answer">Wildcat is rated R for some <strong>thematic material</strong> and brief bloody
+                    images related to the nature of Flannery O'Connor's stories, which often deal with heavy, complex,
+                    and sometimes violent subjects.</p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <span class="faq-question">What is the movie 2025 about?</span>
+                <p class="faq-answer">This movie, Wildcat 2025, is about the intense personal and artistic journey of
+                    the writer Flannery O'Connor as she navigates illness and attempts to establish her voice in
+                    American literature.</p>
+            </div>
+
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <span class="faq-question">Do wildcats still exist?</span>
+                <p class="faq-answer">Yes, wildcats (specifically the European Wildcat and other related species) still
+                    exist globally, though this movie is not about the animal but uses the name for thematic resonance
+                    with the writer's personality.</p>
+            </div>
+        </div>
+
+        <div class="card how-to-download">
+            <h2>❓ How to Download</h2>
+            <ol style="margin-left: 20px;">
+                <li>Click on the desired quality link (480p, 720p, or 1080p) above.</li>
+                <li>You will be redirected to the secure <strong>Telegram</strong> movie file link.</li>
+                <li>Click the 'Download' button within Telegram to save the file to your device.</li>
+                <li>Ensure you have the Telegram app installed for the best experience.</li>
+            </ol>
+
+            <h2 style="margin-top: 30px;">🔗 Report Broken Links</h2>
+            <p>If you find any link to be broken or expired, please contact us immediately via the <a
+                    href="https://wa.me/918168305050">WhatsApp button</a> above or our Telegram group. We aim to fix all
+                links within 24 hours.</p>
+
+            <h2 style="margin-top: 30px;">⚖️ DMCA Notice</h2>
+            <p>We do not host any files on our server. All content is linked directly from third-party services like
+                Telegram. If you are a copyright owner and find a link infringing your rights, please contact us for
+                immediate removal.</p>
+
+            <h2 style="margin-top: 30px;">Disclaimer</h2>
+            <p>This post is for promotional purposes only. We encourage our users to buy and watch movies legally. All
+                links are gathered from various online sources. Watch at your own risk.</p>
+        </div>
+
+    </div>
+    <footer>
+        <p>© 2025 Free Movie Server 2026 | All Rights Reserved.</p>
+        <p>Created with 💖 for War Movie enthusiasts. | <a href="#" onclick="scrollToTop(event)">Back to Top</a></p>
+    </footer>
+
+    <script>
+        // --- Theme Toggle Function ---
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+
+        // Apply saved theme on load
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        });
+
+        // --- Back to Top Function ---
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function scrollToTop(event) {
+            if (event) {
+                event.preventDefault(); // Prevent default link behavior
+            }
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            // Smooth scroll behavior is handled by CSS: scroll-behavior: smooth;
+        }
+
+        // --- FAQ Toggle Function ---
+        function toggleFaq(item) {
+            item.classList.toggle('open');
+        }
+    </script>
+
+</body>
+
+</html>
