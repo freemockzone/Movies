@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Troll 2 2025 in 480p, 720p, 1080p</title>
+    <link rel="icon" type="image/png" href="f.png">
+    <style>
+        :root {
+            --primary-color: #00d4ff;
+            /* Neon Cyan */
+            --secondary-color: #ff007a;
+            /* Neon Pink */
+            --accent-color: #ccff00;
+            /* Neon Lime */
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --card-bg: #f0f0f0;
+            --navbar-bg: #f8f9fa;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --gradient: linear-gradient(135deg, #00d4ff 0%, #005bea 100%);
+        }
+
+        body.dark-mode {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --navbar-bg: #1a1a1a;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: var(--navbar-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            white-space: nowrap;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: var(--secondary-color);
+            overflow-x: auto;
+            max-width: 40%;
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .navbar-brand::-webkit-scrollbar {
+            display: none;
+            /* Chrome/Safari */
+        }
+
+        .navbar-title {
+            font-size: 1em;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-right: auto;
+            margin-left: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .navbar-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        .theme-toggle {
+            background: var(--gradient);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            /* Single column constraint */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Poster */
+        .poster-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .poster-container img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border: 3px solid var(--primary-color);
+        }
+
+        /* Sections */
+        .section-box {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        h2,
+        h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* Movie Details List */
+        .movie-details p {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Screenshots */
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .screenshot-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            border-radius: 8px;
+            border: 2px solid var(--text-color);
+        }
+
+        .view-btn {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+
+        /* Download Links */
+        .download-div {
+            background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 99%, #FECFEF 100%);
+            border: 2px solid #ff007a;
+            text-align: center;
+        }
+
+        body.dark-mode .download-div {
+            background: linear-gradient(135deg, #4b1248 0%, #1e1e1e 100%);
+            border-color: #ff007a;
+        }
+
+        .dl-link {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .dl-link:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+
+        /* Telegram Div */
+        .telegram-div {
+            background: linear-gradient(45deg, #2AABEE 0%, #229ED9 100%);
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .telegram-btn {
+            display: inline-block;
+            background-color: white;
+            color: #229ED9;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 900;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Warning Div */
+        .warning-div {
+            border-left: 5px solid #ff4444;
+            background-color: rgba(255, 68, 68, 0.1);
+        }
+
+        .whatsapp-link {
+            color: #25D366;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 10px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: var(--secondary-color);
+            cursor: pointer;
+        }
+
+        /* Back to Top */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--secondary-color);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            background-color: var(--navbar-bg);
+            border-top: 3px solid var(--accent-color);
+        }
+
+        /* Responsive Text Adjustments */
+        @media screen and (max-width: 600px) {
+            .navbar-brand {
+                font-size: 1.2em;
+            }
+
+            .navbar-title {
+                display: none;
+            }
+
+            /* Hide title on very small screens to save space */
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+
+    <div class="navbar">
+        <div class="navbar-brand">Movie Archive 26</div>
+        <span class="navbar-title">Download Troll 2 2025 in 480p, 720p, 1080p</span>
+        <div class="navbar-controls">
+            <a href="index.html">Home</a>
+            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="poster-container">
+            <a href="ss/troll-2-movie-poster.jpg" target="_blank">
+                <img src="ss/troll-2-movie-poster.jpg" alt="Troll 2 2025 Movie Poster">
+            </a>
+        </div>
+
+        <div class="section-box movie-details">
+            <h3>📜 Movie Details:</h3>
+            <p><strong>Movie Name:</strong> Troll 2 (2025)</p>
+            <p><strong>Language:</strong> Hindi, English</p>
+            <p><strong>Release Date:</strong> December 1, 2025</p>
+            <p><strong>Director:</strong> Roar Uthaug</p>
+            <p><strong>Cast:</strong> Ine Marie Wilmann, Kim S. Falck-Jørgensen, Mads Sjøgård Pettersen, Sara Khorami
+            </p>
+            <p><strong>Genre:</strong> Action, Fantasy, Thriller</p>
+            <p><strong>Quality:</strong> 480p, 720p, 1080p</p>
+            <p><strong>Size:</strong> 500MB~ (480p), 950MB~ (720p), 2GB~ (1080p)</p>
+            <p><strong>Format:</strong> mkv</p>
+        </div>
+
+        <div class="section-box">
+            <h3>Movie Plot:</h3>
+            <p>Set three years after the devastation caused by the first giant troll in Oslo, <strong>Troll 2</strong>
+                (2025) follows paleobiologist Nora Tidemann as she ventures deep into the Nordic wilderness once again.
+                A new, even more colossal threat—dubbed the "Megatroll"—has awakened from the mountains, accompanied by
+                an ancient mystery linked to the colonization of indigenous people and pagan folklore. </p>
+            <br>
+            <p>As the Megatroll wreaks havoc, Nora reunites with her team, including Kris and Andreas, to find a way to
+                stop the beast. The stakes are raised when they discover the creature isn't alone. In a battle of Kaiju
+                proportions, humanity's survival hangs by a thread as modern weaponry fails against nature's ancient
+                wrath. Will they uncover the secrets of the mountain in time, or will Norway fall?</p>
+        </div>
+
+        <div class="section-box">
+            <h3>📸 High-Quality Screenshots</h3>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="ss/40.png" alt="Screenshot 1">
+                    <button class="view-btn" onclick="window.open('ss/40.png')">View Full Size</button>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/41.png" alt="Screenshot 2">
+                    <button class="view-btn" onclick="window.open('ss/41.png')">View Full Size</button>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/42.png" alt="Screenshot 3">
+                    <button class="view-btn" onclick="window.open('ss/42.png')">View Full Size</button>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/43.png" alt="Screenshot 4">
+                    <button class="view-btn" onclick="window.open('ss/43.png')">View Full Size</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box download-div">
+            <h3>⬇️ Direct Telegram Download Links</h3>
+            <a class="dl-link" href="https://t.me/moviearchive2026/35">Download 480p (500MB~)</a>
+            <a class="dl-link" href="https://t.me/moviearchive2026/36">Download 720p (1050MB~)</a>
+            <a class="dl-link" href="https://t.me/moviearchive2026/37">Download 1080p (2.5GB~)</a>
+        </div>
+
+        <div class="section-box telegram-div">
+            <h3>Join our Telegram Channel for Instant Updates & New Releases:</h3>
+            <a class="telegram-btn" href="https://ttttt.me/moviearchive2026">Join Our Telegram Group Now!</a>
+        </div>
+
+        <div class="section-box warning-div">
+            <h3>🛑 Important Note:</h3>
+            <p>Please <strong>Do not use any VPN</strong> for Downloading Movies from our site. VPNs may interfere with
+                Telegram access.</p>
+            <br>
+            <p>✅ Click on the above links to download this movie directly.</p>
+            <br>
+            <p>⚠️ Report us if you find any download link broken.</p>
+            <p style="margin-top: 10px;">
+                Report Broken Link (WhatsApp) = <a href="https://wa.me/918168305050"
+                    class="whatsapp-link">+91-8168305050</a>
+            </p>
+        </div>
+
+        <div class="section-box">
+            <h3>❓ Frequently Asked Questions (FAQ)</h3>
+
+            <div class="faq-item">
+                <p class="faq-question">Q: Is Troll 2 (2025) a sequel?</p>
+                <p>A: Yes, it is the direct sequel to the 2022 hit Norwegian monster movie "Troll", directed by Roar
+                    Uthaug.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q: What is the release date of Troll 2?</p>
+                <p>A: The movie was released on Netflix on December 1, 2025.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">❓ How to Download</p>
+                <p>1. Click on the desired quality link (480p, 720p, or 1080p) above.</p>
+                <p>2. You will be redirected to the secure Telegram movie file link.</p>
+                <p>3. Click the 'Download' button within Telegram to save the file to your device.</p>
+                <p>4. Ensure you have the Telegram app installed for the best experience.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">🔗 Report Broken Links</p>
+                <p>If you find any link to be broken or expired, please contact us immediately via the WhatsApp button
+                    above or our Telegram group. We aim to fix all links within 24 hours.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">⚖️ DMCA Notice</p>
+                <p>We do not host any files on our server. All content is linked directly from third-party services like
+                    Telegram. If you are a copyright owner and find a link infringing your rights, please contact us for
+                    immediate removal.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Disclaimer</p>
+                <p>This post is for promotional purposes only. We encourage our users to buy and watch movies legally.
+                    All links are gathered from various online sources. Watch at your own risk.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="backToTop" onclick="scrollToTop()">⬆</button>
+
+    <div class="footer">
+        <p>© 2025 Free Movie Server 2026 | All Rights Reserved.</p>
+        <p>Created with 💖 for Movie enthusiasts. | <a href="#" onclick="scrollToTop(); return false;"
+                style="color: var(--primary-color);">Back to Top</a></p>
+    </div>
+
+    <script>
+        // Theme Toggle Logic
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('light-mode');
+            body.classList.toggle('dark-mode');
+        }
+
+        // Back to Top Logic
+        const backToTopBtn = document.getElementById("backToTop");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

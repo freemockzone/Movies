@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Jingle Bell Heist in 480p, 720p, 1080p</title>
+    <link rel="icon" href="f.png">
+    <style>
+        :root {
+            /* Festive & Colorful Theme */
+            --primary-color: #E50914;
+            /* Festive Red */
+            --secondary-color: #007D2C;
+            /* Festive Green */
+            --accent-color: #FFD700;
+            /* Bright Gold */
+            --link-color: #1E90FF;
+            /* Dodger Blue */
+            --text-color: #1A1A1A;
+            --bg-color: #F0F0F0;
+            --card-bg: #FFFFFF;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode {
+            --text-color: #FAFAFA;
+            --bg-color: #121212;
+            --card-bg: #1E1E1E;
+            --shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+            --link-color: #5DADE2;
+        }
+
+        /* Base Reset and Single Column Layout */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+            min-height: 100vh;
+            /* Applying scrollability based on user request "make this section scrollable" which usually means the content area */
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 15px;
+            box-sizing: border-box;
+            /* Ensures 100% width on small screens and single column */
+            width: 100%;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--card-bg);
+            border-bottom: 3px solid var(--primary-color);
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        .navbar .site-name {
+            font-size: 1.2em;
+            font-weight: 900;
+            color: var(--secondary-color);
+            margin-right: 20px;
+        }
+
+        .navbar a,
+        .navbar button {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+            background: none;
+            font-weight: 600;
+        }
+
+        .navbar a:hover,
+        .navbar button:hover {
+            background-color: var(--primary-color);
+            color: var(--card-bg);
+        }
+
+        .navbar-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: var(--secondary-color);
+            flex-grow: 1;
+            margin-left: 10px;
+            text-wrap: balance;
+        }
+
+        /* Section Styling */
+        .card,
+        .download-box,
+        .telegram-box,
+        .note-box,
+        .faq-box {
+            background-color: var(--card-bg);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--primary-color);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Movie Poster */
+        .poster-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .movie-poster {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .movie-poster:hover {
+            transform: scale(1.02);
+        }
+
+        /* Details List */
+        .details-list p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        .details-list strong {
+            color: var(--secondary-color);
+            min-width: 120px;
+            display: inline-block;
+        }
+
+        /* Screenshots */
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .screenshot-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+
+        .screenshot-item img:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+
+        .full-size-btn {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.8em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .screenshot-item:hover .full-size-btn {
+            opacity: 1;
+        }
+
+
+        /* Download Box (Attractive Div 1) */
+        .download-box {
+            border-left: 5px solid var(--secondary-color);
+            background-color: var(--card-bg);
+            text-align: center;
+        }
+
+        .download-box h2 {
+            color: var(--secondary-color);
+            border-bottom: none;
+            font-size: 1.8em;
+        }
+
+        .download-links a {
+            display: block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.1s;
+            box-shadow: 0 5px 10px rgba(229, 9, 20, 0.4);
+            border: 2px solid var(--primary-color);
+        }
+
+        .download-links a:hover {
+            background-color: #B20710;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(229, 9, 20, 0.6);
+        }
+
+        /* Telegram Box (Attractive Div 2) */
+        .telegram-box {
+            background: linear-gradient(135deg, #1E90FF, #007D2C);
+            /* Blue & Green mix for Telegram/Festive */
+            color: white;
+            text-align: center;
+            border-left: 5px solid var(--accent-color);
+            padding: 30px;
+        }
+
+        .telegram-box h2 {
+            color: var(--accent-color);
+            border-bottom: none;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        .telegram-box a {
+            display: inline-block;
+            background-color: white;
+            color: #1E90FF;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .telegram-box a:hover {
+            background-color: #EFEFEF;
+            transform: scale(1.05);
+        }
+
+        /* Note Box (Attractive Div 3) */
+        .note-box {
+            border-left: 5px solid #FFA500;
+            /* Orange for Warning/Important */
+            font-size: 1em;
+        }
+
+        .note-box strong.whatsapp {
+            color: var(--primary-color);
+            font-size: 1.2em;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .note-box .whatsapp-link {
+            display: inline-block;
+            color: white;
+            background-color: #25D366;
+            /* WhatsApp Green */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 10px;
+            transition: opacity 0.3s;
+        }
+
+        .note-box .whatsapp-link:hover {
+            opacity: 0.9;
+        }
+
+        /* FAQ/SEO Box (Attractive Div 4) */
+        .faq-box {
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .faq-box h2 {
+            color: var(--secondary-color);
+            font-size: 1.5em;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: var(--bg-color);
+        }
+
+        .faq-item strong {
+            color: var(--primary-color);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            z-index: 999;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px 15px;
+            background-color: var(--card-bg);
+            border-top: 3px solid var(--primary-color);
+            color: var(--text-color);
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        /* Responsiveness for small screens */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar>div {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+
+            .navbar a,
+            .navbar button {
+                margin: 5px 0;
+                flex-grow: 1;
+                text-align: center;
+            }
+
+            .navbar .site-name {
+                margin-right: 0;
+            }
+
+            .navbar-title {
+                display: none;
+                /* Hide long title on small screen to save space */
+            }
+
+            .screenshots {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .download-box h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+
+    <div class="navbar" id="top">
+        <span class="site-name">Movie Archive 26</span>
+        <span class="navbar-title">Download Jingle Bell Heist in 480p, 720p, 1080p</span>
+        <div>
+            <a href="index.html">Home</a>
+            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="poster-section">
+            <img src="ss/Jingle-Bell-Heist-(2025)-poster.jpg" alt="Jingle Bell Heist Movie Poster" class="movie-poster">
+        </section>
+
+        <section class="card">
+            <h2>📜 Movie Details</h2>
+            <div class="details-list">
+                <p><strong class="movie-name">Movie Name:</strong> Jingle Bell Heist</p>
+                <p><strong>Language:</strong> Hindi, English</p>
+                <p><strong>Release Date:</strong> November 26, 2025</p>
+                <p><strong>Director:</strong> Michael Fimognari</p>
+                <p><strong>Cast:</strong> Olivia Holt, Connor Swindells, Lucy Punch, Peter Serafinowicz</p>
+                <p><strong>Genre:</strong> Romance, Comedy, Crime</p>
+                <p><strong>Quality:</strong> 480p, 720p, 1080p</p>
+                <p><strong>Size:</strong> 500MB~ (480p), 950MB~ (720p), 2GB~ (1080p)</p>
+                <p><strong>Format:</strong> mkv</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>🎬 Movie Plot</h2>
+            <p>
+                <strong class="seo-keyword">Jingle Bell Heist</strong> follows Sophia and Nick, two clever,
+                down-on-their-luck thieves who unexpectedly cross paths while planning to rob the same upscale London
+                department store on Christmas Eve. Forced into a reluctant alliance, their rivalry quickly turns into
+                teamwork as they navigate elaborate security, witty banter, and rising romantic chemistry amidst the
+                glittering holiday chaos. Directed by Michael Fimognari, this <strong class="seo-keyword">Christmas
+                    romantic comedy</strong> blends festive charm with a thrilling <strong class="seo-keyword">heist
+                    adventure</strong>, exploring whether the perfect crime can lead to unexpected love. Streamed
+                globally on Netflix starting November 26, 2025, you can now <strong class="seo-keyword">download Jingle
+                    Bell Heist in 480p, 720p, and 1080p</strong> quality from our archive.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>📸 High-Quality Screenshots</h2>
+            <div class="screenshots">
+                <div class="screenshot-item">
+                    <img src="ss/33.png" alt="Jingle Bell Heist Screenshot 1" loading="lazy">
+                    <a href="ss/33.png" class="full-size-btn" target="_blank">Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/34.png" alt="Jingle Bell Heist Screenshot 2" loading="lazy">
+                    <a href="ss/34.png" class="full-size-btn" target="_blank">Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/35.png" alt="Jingle Bell Heist Screenshot 3" loading="lazy">
+                    <a href="ss/35.png" class="full-size-btn" target="_blank">Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/36.png" alt="Jingle Bell Heist Screenshot 4" loading="lazy">
+                    <a href="ss/36.png" class="full-size-btn" target="_blank">Full Size</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="download-box">
+            <h2>⬇️ Direct Telegram Download Links</h2>
+            <div class="download-links">
+                <a href="https://t.me/moviearchive2026/25" target="_blank">Download 480p (500MB~)</a>
+                <a href="https://t.me/moviearchive2026/26" target="_blank">Download 720p (950MB~)</a>
+                <a href="https://t.me/moviearchive2026/27" target="_blank">Download 1080p (2GB~)</a>
+            </div>
+        </section>
+
+        <section class="telegram-box">
+            <h2>Join our Telegram Channel for Instant Updates & New Releases:</h2>
+            <a href="https://t.me/moviearchive2026" target="_blank">Join Our Telegram Group Now!</a>
+        </section>
+
+        <section class="note-box">
+            <strong style="color: #FFA500;">🛑 Important Note:</strong> Please Do not use any VPN for Downloading Movies
+            from our site. VPNs may interfere with Telegram access.
+            <p>✅ Click on the above links to download this movie directly.</p>
+            <p style="color: var(--primary-color);">⚠️ Report us if you find any download link broken.</p>
+            <strong class="whatsapp">Report Broken Link (WhatsApp)</strong>
+            <a href="https://wa.me/918168305050" class="whatsapp-link" target="_blank">+91-8168305050</a>
+        </section>
+
+        <section class="faq-box">
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
+
+            <div class="faq-item">
+                <p><strong>❓ How to Download Jingle Bell Heist?</strong></p>
+                <ol>
+                    <li>Click on the desired quality link (480p, 720p, or 1080p) above.</li>
+                    <li>You will be redirected to the secure Telegram movie file link.</li>
+                    <li>Click the 'Download' button within Telegram to save the file to your device.</li>
+                    <li>Ensure you have the Telegram app installed for the best experience.</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>🔗 Report Broken Links</strong></p>
+                <p>If you find any link to be broken or expired, please contact us immediately via the WhatsApp button
+                    above or our Telegram group. We aim to fix all links within 24 hours.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>⚖️ DMCA Notice</strong></p>
+                <p>We do not host any files on our server. All content is linked directly from third-party services like
+                    Telegram. If you are a copyright owner and find a link infringing your rights, please contact us for
+                    immediate removal.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Disclaimer</strong></p>
+                <p>This post is for promotional purposes only. We encourage our users to buy and watch movies legally.
+                    All links are gathered from various online sources. Watch at your own risk.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <a href="#top" class="back-to-top" id="backToTopBtn">⬆️</a>
+
+    <footer>
+        <p>© 2025 Free Movie Server 2026 | All Rights Reserved.</p>
+        <p>Created with 💖 for War Movie enthusiasts. | <a href="#top">Back to Top</a></p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const toggleButton = document.querySelector('.theme-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Toggle Light Mode';
+            } else {
+                toggleButton.textContent = 'Toggle Dark Mode';
+            }
+        }
+
+        // Back to Top Button functionality
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+
+        // Smooth Scroll for Back to Top (using CSS scroll-behavior: smooth on body)
+        backToTopBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('top').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>

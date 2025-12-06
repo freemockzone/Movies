@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Two Worlds, One Wish in 480p, 720p, 1080p</title>
+    <link rel="icon" href="f.png" type="image/png">
+    <link rel="canonical" href="https://www.moviearchive26.com/two-worlds-one-wish-2025-download.html">
+
+    <style>
+        /* CSS Variables for Color and Theme */
+        :root {
+            --primary-color: #ff5722;
+            /* Deep Orange/Coral - Very Colorful */
+            --secondary-color: #3f51b5;
+            /* Indigo/Blue */
+            --background-color: #ffffff;
+            --text-color: #212121;
+            --card-background: #f1f1f1;
+            --success-color: #4caf50;
+            --warning-color: #ff9800;
+            --border-color: #e0e0e0;
+        }
+
+        /* Dark Mode Colors */
+        .dark-mode {
+            --background-color: #121212;
+            --text-color: #e0eeef;
+            --card-background: #1e1e1e;
+            --border-color: #333333;
+            --primary-color: #ff9800;
+            /* Lighter Orange for visibility in dark mode */
+            --secondary-color: #9fa8da;
+        }
+
+        /* General Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+        }
+
+        /* Navbar - Fixed and Responsive */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: var(--card-background);
+            border-bottom: 3px solid var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a,
+        .navbar button {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            border-radius: 5px;
+            transition: background-color 0.2s, color 0.2s;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .navbar a:hover,
+        .navbar button:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .navbar button.theme-toggle {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            font-weight: 700;
+        }
+
+        .navbar button.theme-toggle:hover {
+            opacity: 0.8;
+        }
+
+        /* Site Title & Movie Title */
+        .site-title {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+
+        .movie-title-header {
+            /* Keeps it left to Home button */
+            flex-grow: 1;
+            overflow-x: auto;
+            /* Makes the title text scrollable if it's too long */
+            white-space: nowrap;
+            margin-right: 20px;
+        }
+
+        .movie-title-header span {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--text-color);
+            padding: 0 10px;
+        }
+
+        /* Main Content Container (Single Column Layout) */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: hidden;
+            /* Prevent horizontal scroll from content overflow */
+        }
+
+        /* Section Styling (Colorful Cards) */
+        .section-card {
+            background-color: var(--card-background);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--primary-color);
+            transition: all 0.3s;
+        }
+
+        .section-card:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h2,
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 strong,
+        h3 strong {
+            font-weight: 900;
+        }
+
+        /* Movie Poster */
+        .poster-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .poster-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border: 5px solid var(--primary-color);
+        }
+
+        /* Movie Details List */
+        .movie-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .movie-details li {
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .movie-details li strong {
+            color: var(--secondary-color);
+            display: inline-block;
+            min-width: 120px;
+            margin-right: 10px;
+        }
+
+        /* Telegram Download Section */
+        .download-links {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .download-links h3 {
+            color: white;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .download-button {
+            display: block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 700;
+            transition: background-color 0.3s, transform 0.2s, color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #e0e0e0;
+            transform: translateY(-2px);
+            color: var(--secondary-color);
+        }
+
+        /* Telegram Join & Important Note */
+        .attractive-div {
+            text-align: center;
+            border: 3px solid var(--secondary-color);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            background-color: rgba(63, 81, 181, 0.1);
+            /* Light secondary color background */
+        }
+
+        .attractive-div.note {
+            border-color: var(--warning-color);
+            background-color: rgba(255, 152, 0, 0.1);
+        }
+
+        .attractive-div a.join-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 30px;
+            margin-top: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .attractive-div a.join-btn:hover {
+            background-color: #303f9f;
+            transform: scale(1.05);
+        }
+
+        /* Status Indicators */
+        .status-check,
+        .status-report {
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        .status-check {
+            color: var(--success-color);
+        }
+
+        .status-report {
+            color: var(--warning-color);
+        }
+
+        /* Screenshots Section */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .screenshot-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .screenshot-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .screenshot-button {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            cursor: pointer;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+
+        .screenshot-button:hover {
+            opacity: 1;
+        }
+
+        /* FAQ Section (Accordion Style for SEO) */
+        .faq-item {
+            margin-bottom: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background-color: var(--card-background);
+            padding: 15px;
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--secondary-color);
+            display: block;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 15px;
+            font-size: 1.2em;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            padding: 15px;
+            background-color: var(--background-color);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .faq-answer p {
+            margin-bottom: 0;
+            color: var(--text-color);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 2px solid var(--primary-color);
+            background-color: var(--card-background);
+            font-size: 0.9em;
+        }
+
+        footer strong {
+            color: var(--primary-color);
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 999;
+            font-size: 1.2em;
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Media Queries for 100% Responsiveness */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+            .site-title {
+                width: 100%;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .navbar>div {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar a,
+            .navbar button {
+                margin: 5px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .movie-title-header {
+                order: 3;
+                /* Move below site-title and buttons on small screens */
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .movie-title-header span {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .download-links,
+            .attractive-div {
+                padding: 20px 10px;
+            }
+
+            .movie-details li strong {
+                display: block;
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+    <div class="navbar">
+        <strong class="site-title">Movie Archive 26</strong>
+
+        <div class="movie-title-header">
+            <span style="font-size: 1.5em; font-weight: 900; color: var(--primary-color);">Download Two Worlds, One Wish
+                in 480p, 720p, 1080p</span>
+        </div>
+
+        <div>
+            <a href="index.html">Home</a>
+            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <div class="container" id="top">
+
+        <div class="poster-container">
+            <img src="Two Worlds, One Wish-poster.png" alt="Two Worlds, One Wish Movie Poster (2025)">
+        </div>
+
+        <div class="section-card movie-details">
+            <h2>📜 <strong>Movie Details:</strong></h2>
+            <ul>
+                <li><strong>Movie Name:</strong> Two Worlds, One Wish (Iki Dünya Bir Dilek)</li>
+                <li><strong>Language:</strong> Hindi, English (Dual Audio)</li>
+                <li><strong>Release Date:</strong> November 27, 2025</li>
+                <li><strong>Director:</strong> Ketche</li>
+                <li><strong>Cast:</strong> Hande Erçel, Metin Akdülger, Serkan Tinmaz, Mert Ege Ak, Hüseyin Avni Danyal
+                </li>
+                <li><strong>Genre:</strong> Romance, Drama, Romantic Drama</li>
+                <li><strong>Quality:</strong> 480p, 720p, 1080p (Full HD)</li>
+                <li><strong>Size:</strong> 500MB~ (480p), 950MB~ (720p), 2GB~ (1080p)</li>
+                <li><strong>Format:</strong> mkv (Matroska Video)</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>🎬 <strong>Movie Plot:</strong></h2>
+            <p>
+                Download and watch <strong>Two Worlds, One Wish (2025)</strong>, a captivating Turkish Romantic Drama.
+                The story centers on Bilge and Can, who met magically as children in a hospital on New Year's Eve.
+                Twenty-one years later, their lives are drastically different—Bilge is a successful, rational lawyer,
+                and Can is a passionate archaeologist. Their paths unexpectedly cross again when they start
+                communicating telepathically. This miracle of a reunion soon unravels a secret from their past, leading
+                them on a thrilling adventure that tests the strength of their unique, shared history against an ancient
+                and powerful mystery. This film is perfect for fans of epic love stories and intertwined destinies.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2>📸 <strong>High-Quality Screenshots</strong></h2>
+            <p style="margin-bottom: 15px;">Click to view the full-size image.</p>
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <img src="ss/29.png" alt="Screenshot 1 from Two Worlds, One Wish">
+                    <button class="screenshot-button" onclick="showFullImage('ss/29.png')">See Full Size</button>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/30.png" alt="Screenshot 2 from Two Worlds, One Wish">
+                    <button class="screenshot-button" onclick="showFullImage('ss/30.png')">See Full Size</button>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/31.png" alt="Screenshot 3 from Two Worlds, One Wish">
+                    <button class="screenshot-button" onclick="showFullImage('ss/31.png')">See Full Size</button>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/32.png" alt="Screenshot 4 from Two Worlds, One Wish">
+                    <button class="screenshot-button" onclick="showFullImage('ss/32.png')">See Full Size</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="download-links">
+            <h3>⬇️ <strong>Direct Telegram Download Links</strong></h3>
+            <a href="https://t.me/moviearchive2026/32" class="download-button">Download 480p (500MB~)</a>
+            <a href="https://t.me/moviearchive2026/33" class="download-button">Download 720p (950MB~)</a>
+            <a href="https://t.me/moviearchive2026/34" class="download-button">Download 1080p (2GB~)</a>
+        </div>
+
+        <div class="attractive-div" style="margin-top: 25px;">
+            <h3>⭐ <strong>Join our Telegram Channel for Instant Updates & New Releases:</strong></h3>
+            <a href="https://t.me/moviearchive2026" class="join-btn">Join Our Telegram Group Now!</a>
+        </div>
+
+        <div class="attractive-div note">
+            <h3>🛑 <strong>Important Note:</strong></h3>
+            <p>Please **Do not** use any VPN for Downloading Movies from our site. VPNs may interfere with Telegram
+                access.</p>
+            <p class="status-check">✅ Click on the above links to download this movie directly.</p>
+            <p class="status-report">⚠️ Report us if you find any download link broken.</p>
+            <a href="https://wa.me/918168305050" class="join-btn" style="background-color: var(--success-color);">Report
+                Broken Link (WhatsApp)</a>
+        </div>
+
+        <div class="section-card">
+            <h2>❓ <strong>Frequently Asked Questions (FAQ)</strong></h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <strong class="faq-question" role="button" aria-expanded="false">What is the movie Two Worlds, One
+                        Wish (2025) about?</strong>
+                    <div class="faq-answer">
+                        <p>This film is a romantic drama about Bilge and Can, two people who meet as children and are
+                            reunited 21 years later when they suddenly gain the ability to hear each other's thoughts
+                            telepathically. Their mysterious connection forces them to confront a hidden secret from
+                            their past.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <strong class="faq-question" role="button" aria-expanded="false">Who are the main actors in Two
+                        Worlds, One Wish?</strong>
+                    <div class="faq-answer">
+                        <p>The main roles are played by the popular Turkish actors Hande Erçel (as Bilge, the lawyer)
+                            and Metin Akdülger (as Can, the archaeologist).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <strong class="faq-question" role="button" aria-expanded="false">What is the official release date
+                        for Two Worlds, One Wish?</strong>
+                    <div class="faq-answer">
+                        <p>The romantic drama film, directed by Ketche, was released on November 27, 2025.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <strong class="faq-question" role="button" aria-expanded="false">Is Two Worlds, One Wish available
+                        in Hindi?</strong>
+                    <div class="faq-answer">
+                        <p>Yes, this movie is available for download in a Dual Audio format, including both its original
+                            language (likely Turkish) and a Hindi-dubbed track, along with English audio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>ℹ️ <strong>Instructions & Notice</strong></h2>
+
+            <strong style="color: var(--secondary-color);">❓ How to Download</strong>
+            <ol style="margin-left: 20px;">
+                <li>Click on the desired quality link (480p, 720p, or 1080p) above.</li>
+                <li>You will be redirected to the secure Telegram movie file link.</li>
+                <li>Click the 'Download' button within Telegram to save the file to your device.</li>
+                <li>Ensure you have the Telegram app installed for the best experience.</li>
+            </ol>
+
+            <strong style="color: var(--secondary-color); margin-top: 15px; display: block;">🔗 Report Broken
+                Links</strong>
+            <p>If you find any link to be broken or expired, please contact us immediately via the WhatsApp button above
+                or our Telegram group. We aim to fix all links within 24 hours.</p>
+
+            <strong style="color: var(--secondary-color); margin-top: 15px; display: block;">⚖️ DMCA Notice</strong>
+            <p>We do not host any files on our server. All content is linked directly from third-party services like
+                Telegram. If you are a copyright owner and find a link infringing your rights, please contact us for
+                immediate removal.</p>
+
+            <strong style="color: var(--secondary-color); margin-top: 15px; display: block;">Disclaimer</strong>
+            <p>This post is for promotional purposes only. We encourage our users to buy and watch movies legally. All
+                links are gathered from various online sources. Watch at your own risk.</p>
+        </div>
+    </div>
+
+    <button id="backToTop" title="Go to top">🔝</button>
+
+    <footer>
+        © 2025 Free Movie Server 2026 | All Rights Reserved.
+        <br>
+        Created with 💖 for War Movie enthusiasts. | <a href="#top"
+            style="color: var(--primary-color); text-decoration: none;">Back to Top</a>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle Function
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            document.querySelector('.theme-toggle').textContent = isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+        }
+
+        // Apply saved theme on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                document.querySelector('.theme-toggle').textContent = 'Toggle Light Mode';
+            } else {
+                document.querySelector('.theme-toggle').textContent = 'Toggle Dark Mode';
+            }
+        });
+
+        // Back to Top functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        };
+
+        backToTopButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const isActive = faqItem.classList.toggle('active');
+
+                if (isActive) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    button.setAttribute('aria-expanded', 'true');
+                } else {
+                    answer.style.maxHeight = null;
+                    button.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Simple function to simulate showing a full image (could be replaced with a modal library)
+        function showFullImage(imageSrc) {
+            alert('Simulating full size view for image: ' + imageSrc + '\n\nIn a real website, this would open a fullscreen modal viewer.');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="f.png">
+    <title>Holiday Touchdown A Bills Love Story 2025 Download</title>
+    <style>
+        /* CSS Variables for Theme */
+        :root {
+            --primary-color: #004D98;
+            /* Bills Blue */
+            --secondary-color: #C60C30;
+            /* Bills Red */
+            --text-color: #333;
+            --background-color: #f4f4f4;
+            --card-background: #fff;
+            --border-color: #ddd;
+        }
+
+        /* Dark Mode Variables */
+        .dark-mode {
+            --text-color: #f4f4f4;
+            --background-color: #121212;
+            --card-background: #1e1e1e;
+            --border-color: #333;
+        }
+
+        /* Basic Reset and Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Responsive Layout using Division Method */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--card-background);
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a,
+        .navbar button {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 8px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .theme-toggle {
+            background-color: var(--secondary-color);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .theme-toggle:hover {
+            background-color: darkred;
+        }
+
+        /* Header and Site Name */
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .site-name {
+            font-size: 1.8em;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-right: 20px;
+            padding-right: 20px;
+            /* Separator space */
+            border-right: 2px solid var(--border-color);
+        }
+
+        /* Poster and Details Section */
+        .movie-header {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .poster-div {
+            flex: 0 0 300px;
+            /* Fixed width for poster on large screens */
+            max-width: 100%;
+            /* For responsiveness */
+            text-align: center;
+        }
+
+        .poster-div img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .details-div {
+            flex: 1;
+            /* Takes up remaining space */
+            min-width: 300px;
+            /* Ensures minimum space on wrap */
+        }
+
+        .details-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .details-list li {
+            margin-bottom: 10px;
+            padding-left: 0;
+        }
+
+        /* Download Links Box */
+        .download-box {
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .download-box a {
+            display: block;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .download-box a:hover {
+            background-color: #003366;
+        }
+
+        /* Screenshots Section */
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .screenshot-item {
+            background-color: var(--card-background);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .full-size-btn {
+            background-color: var(--secondary-color);
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .full-size-btn:hover {
+            background-color: darkred;
+        }
+
+        /* FAQ and Notes */
+        .section-header {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-item strong {
+            /* <--- CORRECT SYNTAX */
+            display: block;
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+
+        .note-box {
+            background-color: #ffe0e6;
+            /* Light Red/Warning color */
+            color: #C60C30;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #C60C30;
+        }
+
+        .note-box.success {
+            background-color: #e6ffe0;
+            color: #1e8449;
+            border: 1px solid #1e8449;
+        }
+
+        .whatsapp-link {
+            background-color: #25D366;
+            /* WhatsApp Green */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .whatsapp-link:hover {
+            background-color: #128C7E;
+        }
+
+        /* Back to Top Button */
+        #backToTopBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place at the bottom */
+            right: 30px;
+            /* Place at the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: var(--primary-color);
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+            transition: background-color 0.3s;
+        }
+
+        #backToTopBtn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--card-background);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments for screens smaller than 600px */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+
+            .header-left {
+                width: 100%;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+
+            .site-name {
+                margin-right: 10px;
+                border-right: none;
+                padding-right: 10px;
+            }
+
+            .navbar>div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .movie-header {
+                flex-direction: column;
+            }
+
+            .poster-div {
+                flex: 1 1 100%;
+            }
+
+            .details-div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">🔝</button>
+
+    <div class="navbar">
+        <div class="header-left">
+            <span class="site-name">Movie Archive 26</span>
+            <span style="font-size: 1.5em; font-weight: 900; color: var(--primary-color);">Holiday Touch Down
+                2025</span>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="movie-header">
+            <div class="poster-div">
+                <img src="ss/holiday-touchdown-2025-poster.jpg"
+                    alt="Holiday Touchdown: A Bills Love Story 2025 Movie Poster">
+            </div>
+
+            <div class="details-div">
+                <h1 style="color: var(--secondary-color);">Holiday Touchdown: A Bills Love Story 2025</h1>
+
+                <h2 class="section-header">📜 Movie Details:</h2>
+                <ul class="details-list">
+                    <li><strong>Movie Name:</strong> Holiday Touchdown: A Bills Love Story 2025</li>
+                    <li><strong>Language:</strong> Hindi, English</li>
+                    <li><strong>Release Date:</strong> 22-November-2025</li>
+                    <li><strong>Director:</strong> (Michael B. Jordan as Producer)</li>
+                    <li><strong>Cast:</strong> Placeholder Lead, Placeholder Supporting, Placeholder Star</li>
+                    <li><strong>Genre:</strong> Romantic Comedy, Christmas, Sports (NFL/Buffalo Bills)</li>
+                    <li><strong>Quality:</strong> 480p, 720p, 1080p</li>
+                    <li><strong>Size:</strong> 500MB~ (480p), 1.3GB~ (720p), 3GB~ (1080p)</li>
+                    <li><strong>Format:</strong> mkv</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="movie-plot-div">
+            <h2 class="section-header">📖 Movie Plot:</h2>
+            <p>
+                <strong>Holiday Touchdown: A Bills Love Story</strong> is an anticipated romantic comedy set to release
+                just in time for the 2025 holiday season. The film follows a devoted Buffalo Bills fan who returns to
+                her hometown for the holidays. What was supposed to be a joyous reunion turns into a familial conflict
+                due to the family's opposing allegiance to the team, a common divide among football enthusiasts. Adding
+                to the drama, she unexpectedly falls for an individual who supports a rival team. This SEO-friendly plot
+                focuses on themes of family, love, and the passion of NFL fandom, specifically highlighting the unique
+                community spirit of the Buffalo Bills fanbase, making it a must-watch for fans of holiday romance and
+                sports.
+            </p>
+        </div>
+
+        <div class="screenshots-div">
+            <h2 class="section-header">📸 High-Quality Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="ss/25.jpg" alt="Screenshot 1">
+                    <a href="ss/25.jpg" target="_blank" class="full-size-btn">See Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/26.png" alt="Screenshot 2">
+                    <a href="ss/26.png" target="_blank" class="full-size-btn">See Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/27.jpg" alt="Screenshot 3">
+                    <a href="ss/27.jpg" target="_blank" class="full-size-btn">See Full Size</a>
+                </div>
+                <div class="screenshot-item">
+                    <img src="ss/28.jpg" alt="Screenshot 4">
+                    <a href="ss/28.jpg" target="_blank" class="full-size-btn">See Full Size</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="download-box">
+            <h2 style="color: var(--secondary-color);">⬇️ Direct Telegram Download Links</h2>
+            <a href="https://t.me/moviearchive2026/17">Download 480p (500MB~)</a>
+            <a href="https://t.me/moviearchive2026/17">Download 720p (1.3GB~)</a>
+            <a href="https://t.me/moviearchive2026/17">Download 1080p (4GB~)</a>
+        </div>
+
+        <div class="telegram-promo">
+            <h3 style="margin-top: 0;">Join our Telegram Channel for Instant Updates & New Releases:</h3>
+
+            <br />
+            <a href="https://t.me/moviearchive2026" class="download-box a" style="background-color: #0088CC;">Join Our
+                Telegram Group Now!</a>
+        </div>
+        <br><br>
+        <div class="notes-div">
+            <div class="note-box">
+                <strong>🛑 Important Note:</strong> Please Do not use any VPN for Downloading Movies from our site. VPNs
+                may interfere with Telegram access.
+            </div>
+            <div class="note-box success">
+                <strong>✅ Action:</strong> Click on the above links to download this movie directly.
+            </div>
+            <div class="note-box">
+                <strong>⚠️ Report Issue:</strong> Report us if you find any download link broken.
+                <br>
+                <a href="https://wa.me/918168305050" class="whatsapp-link" target="_blank">Report Broken Link
+                    (WhatsApp)</a>
+            </div>
+        </div>
+
+        <div class="faq-div">
+            <h2 class="section-header">❓ Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-item">
+                <strong>Where can I watch holiday touchdown bills?</strong>
+                <p>The movie is anticipated to be available on major streaming platforms post-release, potentially
+                    including services known for holiday or sports-themed content. Check this page for official download
+                    links near the release date.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Will holiday touchdown be on Hallmark?</strong>
+                <p>While the genre is typical of holiday movies, official confirmation is pending. It is being produced
+                    by an established film company, so watch for announcements on major network or streaming deals.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Who stars in Holiday Touchdown: A Bills Love Story?</strong>
+                <p>The primary cast details are expected to be announced closer to the production date. We have used
+                    placeholders above until official names are released.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Where can I watch the Bills movie?</strong>
+                <p>Once officially released on 22-November-2025, you can watch it via the official links provided on
+                    this page, which redirect to secure Telegram downloads.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Is holiday touchdown out yet?</strong>
+                <p>Yes, the official release date is 22-November-2025.</p>
+            </div>
+        </div>
+
+        <div class="how-to-div">
+            <h2 class="section-header">❓ How to Download</h2>
+            <ol>
+                <li>Click on the desired quality link (480p, 720p, or 1080p) in the "Direct Telegram Download Links"
+                    section above.</li>
+                <li>You will be redirected to the secure Telegram movie file link.</li>
+                <li>Click the 'Download' button within Telegram to save the file to your device.</li>
+                <li>Ensure you have the Telegram app installed for the best experience.</li>
+            </ol>
+        </div>
+
+        <div class="notices-div">
+            <h2 class="section-header">🔗 Report Broken Links</h2>
+            <p>If you find any link to be broken or expired, please contact us immediately via the WhatsApp button above
+                or our Telegram group. We aim to fix all links within 24 hours.</p>
+
+            <h2 class="section-header">⚖️ DMCA Notice</h2>
+            <p>We do not host any files on our server. All content is linked directly from third-party services like
+                Telegram. If you are a copyright owner and find a link infringing your rights, please contact us for
+                immediate removal.</p>
+
+            <h2 class="section-header">Disclaimer</h2>
+            <p>This post is for promotional purposes only. We encourage our users to buy and watch movies legally. All
+                links are gathered from various online sources. Watch at your own risk.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2025 Free Movie Server 2026 | All Rights Reserved.
+        <br>
+        Created with 💖 for War Movie enthusiasts. | <a href="javascript:void(0)" onclick="scrollToTop()">Back to
+            Top</a>
+    </div>
+
+    <script>
+        // Function to toggle between light and dark mode
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            // Optional: Save the preference in local storage
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+
+        // Function to check saved theme preference on load
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        }
+
+        // Run loadTheme when the page loads
+        loadTheme();
+
+        // Get the button
+        let mybutton = document.getElementById("backToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
