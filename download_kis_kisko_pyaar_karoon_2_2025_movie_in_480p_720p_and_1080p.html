@@ -2,854 +2,948 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/png" href="f.png" />
-    <link rel="canonical" href="https://ma26.netlify.app/kis-kisko-pyaar-karoon-2-2025" />
-    <title>Download Kis Kisko Pyaar Karoon 2 (2025) in 480p, 720p, 1080p | Movie Archive 26</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kis Kisko Pyaar Karoon 2 (2025) - Download Full Movie [HD]</title>
+    <meta name="description"
+        content="Download Kis Kisko Pyaar Karoon 2 (2025) Full Movie in 480p, 720p, 1080p HD. Kapil Sharma returns in this hilarious comedy sequel.">
     <style>
+        /* -----------------------------------------------------------
+           GLOBAL RESET & BASICS
+        ----------------------------------------------------------- */
         :root {
-            --bg: #000000;
-            --text: #e6e6e6;
-            --muted: #a8a8a8;
-            --primary-color: #e50914;
-            /* Netflix red */
-            --primary-hover: #ff2a33;
-            --card-bg: #141414;
-            --border: #222222;
-            --accent: #b71c1c;
-            --link: #ff4b55;
-            --success: #19d77c;
-            --warning: #ffbf00;
+            --primary-red: #E50914;
+            --primary-hover: #b2070f;
+            --bg-black: #141414;
+            --bg-dark: #1f1f1f;
+            --bg-card: #2a2a2a;
+            --text-white: #ffffff;
+            --text-gray: #aaaaaa;
+            --imdb-yellow: #f5c518;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.5);
+            --glow-red: 0 0 15px rgba(229, 9, 20, 0.6);
         }
 
-        /* Light mode variables */
-        .light-mode {
-            --bg: #f7f7f7;
-            --text: #111111;
-            --muted: #444444;
-            --card-bg: #ffffff;
-            --border: #dddddd;
-            --primary-color: #d10f1b;
-            --primary-hover: #f21c27;
-            --accent: #c21807;
-            --link: #e53935;
-        }
-
-        /* Base reset */
-        *,
-        *::before,
-        *::after {
+        * {
             box-sizing: border-box;
-        }
-
-        html,
-        body {
             margin: 0;
             padding: 0;
-            background: var(--bg);
-            color: var(--text);
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.5;
-            min-height: 100%;
         }
 
-        /* Single column container */
-        .page {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            width: min(100%, 1100px);
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-black);
+            color: var(--text-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* -----------------------------------------------------------
+           LAYOUT & CONTAINER
+        ----------------------------------------------------------- */
+        .container {
+            width: 100%;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 clamp(12px, 3vw, 24px);
+            padding: 0 20px;
         }
 
-        /* Navbar */
+        /* -----------------------------------------------------------
+           COMPONENTS: BUTTONS & BADGES
+        ----------------------------------------------------------- */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-red {
+            background-color: var(--primary-red);
+            color: white;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .btn-red:hover {
+            background-color: var(--primary-hover);
+            box-shadow: var(--glow-red);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: transparent;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            border-color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.85rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-gray);
+            margin-right: 10px;
+        }
+
+        .live-dot {
+            height: 8px;
+            width: 8px;
+            background-color: var(--primary-red);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* -----------------------------------------------------------
+           1. STICKY NAVBAR
+        ----------------------------------------------------------- */
         .navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
+            background: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+        }
+
+        .nav-content {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            gap: 1rem;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.70));
-            border-bottom: 1px solid var(--border);
-            backdrop-filter: saturate(150%) blur(8px);
-            padding: clamp(10px, 2.2vw, 16px) 0;
-        }
-
-        .brand-wrap {
-            display: flex;
             align-items: center;
-            gap: clamp(8px, 2vw, 14px);
-            min-width: 0;
         }
 
-        .site-name {
-            color: var(--primary-color);
-            font-weight: 900;
-            font-size: clamp(1rem, 3.2vw, 1.25rem);
-            white-space: nowrap;
-            overflow-x: auto;
-            max-width: min(60vw, 500px);
-            padding-bottom: 2px;
-            scrollbar-width: thin;
-        }
-
-        .title-inline {
-            font-size: clamp(1rem, 3.6vw, 1.5rem);
-            font-weight: 900;
-            color: var(--primary-color);
-            white-space: nowrap;
-            overflow-x: auto;
-            max-width: min(55vw, 560px);
-            padding-bottom: 2px;
-            scrollbar-width: thin;
-        }
-
-        .nav-actions {
-            display: flex;
-            align-items: center;
-            gap: clamp(8px, 2vw, 12px);
-        }
-
-        .nav-actions a,
-        .button {
-            color: #ffffff;
-            background: var(--primary-color);
-            border: 1px solid var(--border);
-            padding: clamp(8px, 2.8vw, 10px) clamp(12px, 3.2vw, 16px);
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 700;
-            transition: background .2s ease, transform .08s ease;
-            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.02), 0 6px 18px rgba(229, 9, 20, 0.25);
-        }
-
-        .nav-actions a:hover,
-        .button:hover {
-            background: var(--primary-hover);
-            transform: translateY(-1px);
-        }
-
-        .nav-actions a:active,
-        .button:active {
-            transform: translateY(0);
-        }
-
-        .theme-toggle {
-            background: transparent;
-            color: var(--text);
-            border: 1px solid var(--border);
-            padding: clamp(8px, 2.8vw, 10px) clamp(12px, 3.2vw, 16px);
-            border-radius: 6px;
-            font-weight: 700;
-            cursor: pointer;
-        }
-
-        /* Permalink strip */
-        .permalink {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: linear-gradient(90deg, #1a1a1a, #0d0d0d);
-            border: 1px solid var(--border);
-            border-left: 4px solid var(--primary-color);
-            padding: clamp(8px, 2.8vw, 12px);
-            border-radius: 8px;
-        }
-
-        .permalink a {
-            color: var(--link);
+        .logo {
+            font-size: 1.5rem;
             font-weight: 800;
-            text-decoration: none;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .permalink a:hover {
-            text-decoration: underline;
+        .logo span {
+            color: white;
         }
 
-        /* Cards */
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: clamp(14px, 3.4vw, 20px);
-            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03), 0 14px 30px rgba(0, 0, 0, 0.35);
-        }
-
-        .card-header {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            border-bottom: 1px dashed var(--border);
-            padding-bottom: 8px;
-        }
-
-        .card-title {
-            color: #ffffff;
-            font-weight: 900;
-            font-size: clamp(1.1rem, 4.2vw, 1.6rem);
-            letter-spacing: 0.3px;
-        }
-
-        .badge {
-            background: var(--primary-color);
-            color: #fff;
-            border-radius: 999px;
-            padding: 6px 12px;
-            font-weight: 800;
-            font-size: 0.85em;
-            box-shadow: 0 4px 16px rgba(229, 9, 20, 0.35);
-        }
-
-        /* Poster area */
-        .poster {
-            display: grid;
-            gap: 12px;
-        }
-
-        .poster .img-shell {
-            display: grid;
-            place-items: center;
-            background: conic-gradient(from 180deg at 50% 50%, #1a1a1a, #0e0e0e, #1a1a1a);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            min-height: clamp(200px, 40vw, 420px);
-            overflow: hidden;
-        }
-
-        .poster img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-            max-height: 70vh;
-        }
-
-        .poster .asset-link {
-            color: var(--link);
-            font-weight: 800;
+        /* -----------------------------------------------------------
+           2. HERO SECTION
+        ----------------------------------------------------------- */
+        .hero {
+            padding: 40px 0;
             text-align: center;
-            text-decoration: none;
+            background: radial-gradient(circle at center, #2a1111 0%, #141414 70%);
         }
 
-        .poster .asset-link:hover {
-            text-decoration: underline;
+        .viewers-badge {
+            margin-bottom: 15px;
+            border: 1px solid var(--primary-red);
+            color: var(--primary-red);
+            background: rgba(229, 9, 20, 0.1);
         }
 
-        /* Details grid (single column but flexible) */
-        .details-grid {
+        .movie-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 900;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            line-height: 1.1;
+        }
+
+        .meta-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .meta-tag {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        .imdb-block {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(245, 197, 24, 0.1);
+            padding: 5px 15px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(245, 197, 24, 0.3);
+        }
+
+        .imdb-star {
+            color: var(--imdb-yellow);
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        .imdb-score {
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        /* -----------------------------------------------------------
+           3. HERO CONTENT GRID
+        ----------------------------------------------------------- */
+        .hero-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-        }
-
-        .detail-row {
-            display: grid;
-            grid-template-columns: 140px 1fr;
-            gap: 10px;
+            grid-template-columns: 300px 1fr 250px;
+            gap: 25px;
+            margin-bottom: 50px;
             align-items: start;
         }
 
-        @media (max-width: 420px) {
-            .detail-row {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .meta {
-            color: var(--muted);
-            font-weight: 800;
-        }
-
-        /* Screenshots */
-        .screens {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 12px;
-        }
-
-        .ss-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-
-        @media (max-width: 880px) {
-            .ss-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .ss-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .thumb {
+        /* Poster */
+        .poster-card {
             position: relative;
-            background: #0d0d0d;
-            border: 1px solid var(--border);
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
-            min-height: 120px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s;
         }
 
-        .thumb img {
+        .poster-card:hover {
+            transform: scale(1.02);
+        }
+
+        /* Trailer Box */
+        .trailer-box {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+        }
+
+        .trailer-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .trailer-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            display: block;
-            filter: saturate(115%);
+            background: rgba(0, 0, 0, 0.4);
+            transition: 0.3s;
         }
 
-        .thumb .overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.0));
+        .trailer-content:hover::before {
+            background: rgba(0, 0, 0, 0.2);
         }
 
-        .thumb .full-btn {
-            position: absolute;
-            right: 8px;
-            bottom: 8px;
-            background: var(--primary-color);
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            padding: 6px 10px;
-            font-weight: 800;
-            cursor: pointer;
-            box-shadow: 0 6px 18px rgba(229, 9, 20, 0.35);
-        }
-
-        .thumb .full-btn:hover {
-            background: var(--primary-hover);
-        }
-
-        /* Download blocks */
-        .download-block {
-            display: grid;
-            gap: 12px;
-            background: linear-gradient(180deg, #120000, #000000);
-            border: 1px solid var(--border);
-            border-left: 6px solid var(--primary-color);
-            border-radius: 14px;
-            padding: clamp(14px, 3.4vw, 20px);
-            box-shadow: 0 12px 28px rgba(229, 9, 20, 0.15);
-        }
-
-        .download-item {
-            display: grid;
-            grid-template-columns: 1fr auto;
+        .play-btn {
+            width: 70px;
+            height: 70px;
+            background: rgba(229, 9, 20, 0.9);
+            border-radius: 50%;
+            display: flex;
             align-items: center;
-            gap: 10px;
-            background: #0b0b0b;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 10px 12px;
+            justify-content: center;
+            z-index: 2;
+            box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
+            transition: 0.3s;
         }
 
-        .download-item .info {
-            display: grid;
-            gap: 2px;
+        .play-btn svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+            margin-left: 4px;
         }
 
-        .download-item .label {
-            font-weight: 900;
-            color: #fff;
+        .play-btn:hover {
+            transform: scale(1.1);
+            background: var(--primary-red);
         }
 
-        .download-item .size {
-            color: var(--muted);
-            font-weight: 700;
-        }
-
-        .download-item .go {
-            background: var(--primary-color);
-            color: #fff;
-            text-decoration: none;
-            font-weight: 900;
-            padding: 8px 12px;
+        /* Right Widgets */
+        .widget-card {
+            background: var(--bg-card);
+            padding: 15px;
             border-radius: 8px;
-            border: 1px solid var(--border);
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .download-item .go:hover {
-            background: var(--primary-hover);
-        }
-
-        /* CTA blocks */
-        .cta {
-            background: radial-gradient(1200px 520px at 20% 0%, rgba(229, 9, 20, 0.20), transparent), #101010;
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: clamp(14px, 3.4vw, 20px);
-        }
-
-        .cta .cta-title {
-            font-weight: 900;
-            color: #fff;
-            font-size: clamp(1rem, 3.8vw, 1.4rem);
-            margin-bottom: 6px;
-        }
-
-        .cta .cta-desc {
-            color: var(--muted);
-            font-weight: 700;
+        .widget-title {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            text-transform: uppercase;
             margin-bottom: 10px;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 5px;
         }
 
-        .cta .cta-link {
-            display: inline-block;
-            background: var(--primary-color);
-            color: #fff;
-            text-decoration: none;
-            font-weight: 900;
-            padding: 10px 14px;
+        .cast-list-mini {
+            font-size: 0.85rem;
+            color: #ddd;
+        }
+
+        .cast-list-mini li {
+            margin-bottom: 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 3px;
+        }
+
+        .cast-list-mini li:last-child {
+            border: none;
+        }
+
+        /* -----------------------------------------------------------
+           4. MOVIE DETAILS TABLE
+        ----------------------------------------------------------- */
+        .section-title {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--primary-red);
+            padding-left: 15px;
+            margin: 40px 0 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            font-size: 0.95rem;
+        }
+
+        .details-table td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .details-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .dt-label {
+            color: var(--text-gray);
+            font-weight: 500;
+            width: 30%;
+        }
+
+        .dt-value {
+            color: white;
+            font-weight: 400;
+        }
+
+        /* -----------------------------------------------------------
+           5. PLOT
+        ----------------------------------------------------------- */
+        .plot-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 2px solid var(--primary-red);
+            font-size: 1.05rem;
+            color: #ddd;
+            text-align: justify;
+        }
+
+        /* -----------------------------------------------------------
+           6. SCREENSHOTS
+        ----------------------------------------------------------- */
+        .ss-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .ss-item {
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .ss-item:hover {
+            transform: scale(1.05);
+            z-index: 10;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* -----------------------------------------------------------
+           7. DOWNLOAD SECTION
+        ----------------------------------------------------------- */
+        .download-area {
+            background: linear-gradient(180deg, #1f1f1f 0%, #111 100%);
+            padding: 30px;
             border-radius: 10px;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 24px rgba(229, 9, 20, 0.28);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            margin-top: 50px;
         }
 
-        .cta .cta-link:hover {
-            background: var(--primary-hover);
-        }
-
-        /* Notice blocks */
-        .notice {
-            background: #111111;
-            border: 1px solid var(--border);
-            border-left: 6px solid var(--accent);
-            border-radius: 14px;
-            padding: clamp(14px, 3.4vw, 20px);
+        .d-btn-group {
             display: grid;
-            gap: 8px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
         }
 
-        .notice .ok {
-            color: var(--success);
-            font-weight: 900;
+        .d-btn {
+            background: #222;
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        .notice .warn {
-            color: var(--warning);
-            font-weight: 900;
+        .d-btn:hover {
+            background: #2a2a2a;
+            border-color: var(--primary-red);
+            transform: translateY(-3px);
         }
 
-        /* FAQ */
-        .faq {
-            display: grid;
-            gap: 10px;
+        .d-info {
+            text-align: left;
         }
 
-        .faq-item {
-            background: #0e0e0e;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 10px 12px;
+        .d-quality {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            display: block;
         }
 
-        .faq-q {
-            font-weight: 900;
-            color: #fff;
+        .d-size {
+            font-size: 0.85rem;
+            color: var(--text-gray);
         }
 
-        .faq-a {
-            color: var(--muted);
-            font-weight: 700;
+        .d-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+            animation: pulse 2s infinite;
         }
 
-        /* How to download & report blocks */
-        .steps {
-            display: grid;
-            gap: 8px;
-            background: #0d0d0d;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 12px;
+        .d-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
         }
 
-        .steps ol {
-            margin: 0;
-            padding-left: 18px;
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(229, 9, 20, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(229, 9, 20, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(229, 9, 20, 0);
+            }
         }
 
-        .steps li {
-            margin: 6px 0;
-            font-weight: 700;
+        /* -----------------------------------------------------------
+           8, 9, 10, 11 SECTIONS (Telegram, Warning, FAQ, Footer)
+        ----------------------------------------------------------- */
+        .tg-box {
+            background: linear-gradient(45deg, #0088cc, #005f8f);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        /* Footer */
-        footer {
-            border-top: 1px solid var(--border);
-            padding: 20px 0 70px;
-            color: var(--muted);
-            font-weight: 700;
+        .warning-box {
+            background: rgba(255, 165, 0, 0.1);
+            border: 1px solid orange;
+            color: #ffcc00;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
             text-align: center;
         }
 
-        footer .backtop {
-            display: inline-block;
-            margin-top: 8px;
-            color: var(--link);
-            font-weight: 900;
-            text-decoration: none;
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
         }
 
-        /* Back to top floating button */
-        #backToTop {
-            position: fixed;
-            right: clamp(12px, 4vw, 18px);
-            bottom: clamp(12px, 4vw, 18px);
-            z-index: 1001;
-            display: none;
-            background: var(--primary-color);
-            color: #fff;
-            border: none;
-            border-radius: 999px;
-            padding: 12px 14px;
-            font-weight: 900;
-            box-shadow: 0 14px 28px rgba(229, 9, 20, 0.35);
+        .faq-question {
+            padding: 15px;
             cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
         }
 
-        #backToTop:hover {
-            background: var(--primary-hover);
+        .faq-question:hover {
+            background: rgba(255, 255, 255, 0.06);
         }
 
-        /* Scrollable sections request */
-        .scrollable-inline {
-            overflow-x: auto;
-            white-space: nowrap;
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 15px;
+            color: #ccc;
+            font-size: 0.9rem;
         }
 
-        /* Responsive typography helpers */
-        .lead {
-            font-size: clamp(0.98rem, 3.2vw, 1.12rem);
-            color: var(--muted);
-            font-weight: 700;
+        .faq-answer.open {
+            padding: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Accessibility focus */
-        a:focus,
-        button:focus {
-            outline: 2px dashed var(--primary-color);
-            outline-offset: 2px;
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 50px;
+        }
+
+        /* Floating Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 900;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+        }
+
+        /* -----------------------------------------------------------
+           RESPONSIVE TWEAKS
+        ----------------------------------------------------------- */
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .poster-card {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .hero-content-widgets {
+                display: none;
+            }
+
+            /* Hide specific widgets on mobile if needed */
+            .movie-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .meta-row {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .tg-box {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
 
-<body class="light-mode"> <!-- default light per request, will auto-toggle to dark on load -->
+<body>
 
-    <!-- Navbar (site name scrollable, title kept left to Home) -->
-    <div class="navbar">
-        <div class="brand-wrap">
-            <div class="site-name scrollable-inline" title="Website Name - scrollable">
-                Movie Archive 26
-            </div>
-            <span class="title-inline" title="Page Title">
-                Download Kis Kisko Pyaar Karoon 2 (2025) in 480p, 720p, 1080p
-            </span>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Movie<span>Archive</span></div>
+            <a href="#" class="btn btn-red" style="padding: 8px 15px; font-size: 0.9rem;">Home</a>
         </div>
-        <div class="nav-actions">
-            <a href="index.html">Home</a>
-            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <span class="badge viewers-badge">
+                <span class="live-dot"></span> <span id="viewers-count">1,240</span> watching now
+            </span>
+
+            <h1 class="movie-title">Kis Kisko Pyaar Karoon 2</h1>
+
+            <div class="meta-row">
+                <span>2025</span>
+                <span class="meta-tag">UA 16+</span>
+                <span>2h 22m</span>
+                <span>Comedy, Drama, Romance</span>
+            </div>
+
+            <div class="imdb-block">
+                <span class="imdb-star">★</span>
+                <span class="imdb-score">5.8/10</span>
+                <span style="font-size: 0.8rem; color:#888; margin-left:8px;">(IMDb)</span>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-outline" onclick="rateMovie()">Rate Movie</button>
+                <button class="btn btn-outline" onclick="copyLink()">Share Link</button>
+            </div>
+
+            <div class="hero-grid">
+                <div class="poster-card">
+                    <img src="ss/kis_kisko_pyaar_karoon_2_2025_poster.jpg" alt="Kis Kisko Pyaar Karoon 2 Poster">
+                </div>
+
+                <div>
+                    <div class="trailer-box">
+                        <div class="trailer-content"
+                            style="background-image: url('https://img.youtube.com/vi/Q2kL3MDE3HY/maxresdefault.jpg');"
+                            onclick="window.open('https://www.youtube.com/watch?v=Q2kL3MDE3HY', '_blank')">
+                            <div class="play-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-content-widgets">
+                    <div class="widget-card">
+                        <div class="widget-title">Quick Cast</div>
+                        <ul class="cast-list-mini">
+                            <li>Kapil Sharma</li>
+                            <li>Manjot Singh</li>
+                            <li>Ayesha Khan</li>
+                            <li>Tridha Choudhury</li>
+                        </ul>
+                    </div>
+                    <div class="widget-card">
+                        <div class="widget-title">Director</div>
+                        <div style="font-size:0.9rem; color:white;">Anukalp Goswami</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Poster space -->
-    <section class="card poster">
-        <div class="card-header">
-            <div class="card-title">Official poster</div>
-            <div class="badge">High quality</div>
-        </div>
-        <div class="img-shell">
-            <!-- Replace with the actual poster image when available -->
-            <img src="ss/kis_kisko_pyaar_karoon_2_2025_poster.jpg" alt="Kis Kisko Pyaar Karoon 2 (2025) Poster" />
-        </div>
-        <a class="asset-link" href="ss/kis_kisko_pyaar_karoon_2_2025_poster.jpg" download>Download poster asset</a>
-    </section>
+    <div class="container">
 
-    <!-- Movie details -->
-    <section class="card">
-        <div class="card-header">
-            <div class="card-title">📜 Movie details</div>
-            <span class="badge">Verified</span>
+        <h2 class="section-title">Movie Details</h2>
+        <table class="details-table">
+            <tbody>
+                <tr>
+                    <td class="dt-label">Movie Title</td>
+                    <td class="dt-value">Kis Kisko Pyaar Karoon 2</td>
+                </tr>
+                <tr>
+                    <td class="dt-label">Release Date</td>
+                    <td class="dt-value">12 Dec 2025</td>
+                </tr>
+                <tr>
+                    <td class="dt-label">Genre</td>
+                    <td class="dt-value">Comedy, Drama, Romantic</td>
+                </tr>
+                <tr>
+                    <td class="dt-label">Runtime</td>
+                    <td class="dt-value">2h 22m</td>
+                </tr>
+                <tr>
+                    <td class="dt-label">Language</td>
+                    <td class="dt-value">Hindi</td>
+                </tr>
+                <tr>
+                    <td class="dt-label">Director</td>
+                    <td class="dt-value"><strong>Anukalp Goswami</strong></td>
+                </tr>
+                <tr>
+                    <td class="dt-label">Cast</td>
+                    <td class="dt-value"><strong>Kapil Sharma, Manjot Singh, Ayesha Khan, Hira Warina, Tridha Choudhury,
+                            Parul Gulati, Sushant Singh, Jamie Lever</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">Plot Synopsis</h2>
+        <div class="plot-box">
+            <p><strong>Mohan Sharma (Kapil Sharma)</strong>, a restaurant owner in Bhopal, wishes to marry his
+                girlfriend <strong>Saniya</strong>, but faces severe family opposition due to religious differences. In
+                a chaotic turn of events involving a conversion and mistaken identities, he ends up legally married to
+                three different women—<strong>Ruhi</strong>, <strong>Meera</strong>, and <strong>Jenny</strong>—while
+                Saniya mysteriously goes missing. Now, Mohan must juggle three wives and evade a suspicious inspector in
+                this laugh-out-loud comedy of errors.</p>
         </div>
 
-        <div class="details-grid">
-            <div class="detail-row">
-                <div class="meta"><strong>Movie name:</strong></div>
-                <div>Kis Kisko Pyaar Karoon 2</div>
-            </div>
-            <div class="detail-row">
-                <div class="meta"><strong>Language:</strong></div>
-                <div>Hindi, English</div>
-            </div>
-            <div class="detail-row">
-                <div class="meta"><strong>Release date:</strong></div>
-                <div>December 12, 2025 (India)</div>
-            </div>
-            <div class="detail-row">
-                <div class="meta"><strong>Director:</strong></div>
-                <div>Anukalp Goswami</div>
-            </div>
-            <div class="detail-row">
-                <div class="meta"><strong>Cast:</strong></div>
-                <div>Kapil Sharma, Manjot Singh, Warina Hussain, Tridha Choudhury, Parul Gulati, Ayesha Khan,
-                    Asrani, Akhilendra Mishra, Vipin Sharma, Sushant Singh, Jamie Lever, Smita Jaykar, Supriya
-                    Shukla</div>
-            </div>
-            <div class="detail-row">
-                <div class="meta"><strong>Genre:</strong></div>
-                <div>Comedy</div>
-            </div>
-            <div class="detail-row">
-                <div class="meta"><strong>Quality:</strong></div>
-                <div>480p, 720p, 1080p</div>
-            </div>
-            <div class="detail-row">
-                <div class="meta"><strong>Size:</strong></div>
-                <div>400MB~ (480p), 1GB~ (720p), 2GB~ (1080p)</div>
-            </div>
-            <div class="detail-row">
-                <div class="meta"><strong>Format:</strong></div>
-                <div>MKV</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Movie plot (SEO-friendly) -->
-    <section class="card">
-        <div class="card-header">
-            <div class="card-title">🎬 Movie plot</div>
-            <span class="badge">SEO-ready</span>
-        </div>
-        <p class="lead">
-            Kis Kisko Pyaar Karoon 2 follows Mohan Sharma, a man entangled in a chaotic web of secret marriages
-            across different faiths while planning yet another wedding. As a relentless police officer closes in and
-            a confessional spirals into comic misadventures, Mohan’s life becomes a race against discovery, trust,
-            and timing. Packed with high-energy set pieces, culture-crossing confusions, and family-centric humor,
-            the film delivers a crowd-pleasing comedy of errors with a bold, modern visual style and a focus on
-            feel-good entertainment.
-        </p>
-    </section>
-
-    <!-- Screenshots -->
-    <section class="card screens">
-        <div class="card-header">
-            <div class="card-title">📸 High-quality screenshots</div>
-            <span class="badge">Preview & full-size</span>
-        </div>
+        <h2 class="section-title">Screenshots</h2>
         <div class="ss-grid">
-            <div class="thumb">
-                <img src="ss/60.png" alt="Screenshot 60" />
-                <div class="overlay"></div>
-                <a class="full-btn" href="ss/60.png" target="_blank" rel="noopener">Full size</a>
+            <div class="ss-item"><img src="ss/60.png" alt="Scene 1">
             </div>
-            <div class="thumb">
-                <img src="ss/61.png" alt="Screenshot 61" />
-                <div class="overlay"></div>
-                <a class="full-btn" href="ss/61.png" target="_blank" rel="noopener">Full size</a>
+            <div class="ss-item"><img src="ss/61.png" alt="Scene 2">
             </div>
-            <div class="thumb">
-                <img src="ss/62.png" alt="Screenshot 62" />
-                <div class="overlay"></div>
-                <a class="full-btn" href="ss/62.png" target="_blank" rel="noopener">Full size</a>
+            <div class="ss-item"><img src="ss/62.png" alt="Scene 3">
             </div>
-            <div class="thumb">
-                <img src="ss/63.png" alt="Screenshot 63" />
-                <div class="overlay"></div>
-                <a class="full-btn" href="ss/63.png" target="_blank" rel="noopener">Full size</a>
+            <div class="ss-item"><img src="ss/63.png" alt="Scene 4">
             </div>
         </div>
-    </section>
 
-    <!-- Direct download links -->
-    <section class="download-block">
-        <div class="card-title">⬇️ Direct Telegram download links</div>
-        <div class="download-item">
-            <div class="info">
-                <div class="label">Download 480p</div>
-                <div class="size">Approx. 500MB~</div>
+        <h2 class="section-title">Download Links</h2>
+        <div class="download-area">
+            <h3 style="margin-bottom: 10px;">Select Quality</h3>
+            <p style="color: #888; font-size: 0.9rem;">Server 1 (Fastest) • No Ads</p>
+
+            <div class="d-btn-group">
+                <a href="#" class="d-btn">
+                    <div class="d-info">
+                        <span class="d-quality">480p (Mobile)</span>
+                        <span class="d-size">~ 450 MB</span>
+                    </div>
+                    <div class="d-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm4 1v2H8v-2h8z" />
+                        </svg></div>
+                </a>
+
+                <a href="#" class="d-btn">
+                    <div class="d-info">
+                        <span class="d-quality">720p (HD)</span>
+                        <span class="d-size">~ 1.1 GB</span>
+                    </div>
+                    <div class="d-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm4 1v2H8v-2h8z" />
+                        </svg></div>
+                </a>
+
+                <a href="#" class="d-btn">
+                    <div class="d-info">
+                        <span class="d-quality">1080p (Full HD)</span>
+                        <span class="d-size">~ 2.8 GB</span>
+                    </div>
+                    <div class="d-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm4 1v2H8v-2h8z" />
+                        </svg></div>
+                </a>
             </div>
-            <a class="go" href="https://t.me/moviearchive2026/50" target="_blank" rel="noopener">Get 480p</a>
         </div>
-        <div class="download-item">
-            <div class="info">
-                <div class="label">Download 720p</div>
-                <div class="size">Approx. 1.5GB~</div>
+
+        <div class="tg-box">
+            <div>
+                <h3>Join our Telegram Channel</h3>
+                <p style="font-size: 0.9rem; margin-top: 5px; opacity: 0.9;">Get updates on new releases instantly.</p>
             </div>
-            <a class="go" href="https://t.me/moviearchive2026/51" target="_blank" rel="noopener">Get 720p</a>
+            <a href="#" class="btn" style="background: white; color: #0088cc;">Join Now</a>
         </div>
-        <div class="download-item">
-            <div class="info">
-                <div class="label">Download 1080p</div>
-                <div class="size">Approx. 3GB~</div>
-            </div>
-            <a class="go" href="https://t.me/moviearchive2026/52" target="_blank" rel="noopener">Get 1080p</a>
+
+        <div class="warning-box">
+            <strong>⚠️ Important:</strong> Please use a VPN if the download links are not working in your region.
+            <br>Report broken links via WhatsApp button below.
         </div>
-    </section>
 
-    <!-- Telegram CTA -->
-    <section class="cta">
-        <div class="card-title">Join our Telegram channel for instant updates & new releases</div>
-        <p class="cta-desc">Never miss a drop. Get alerts for new movies, quality upgrades, and fixed links.</p>
-        <a class="cta-link" href="https://t.me/moviearchive2026" target="_blank" rel="noopener">Join our Telegram
-            group now</a>
-    </section>
+        <h2 class="section-title">Frequently Asked Questions</h2>
 
-    <!-- Important notes -->
-    <section class="notice">
-        <div class="card-title">🛑 Important note</div>
-        <p><span class="warn">Please do not use any VPN</span> for downloading movies from our site. VPNs may
-            interfere with Telegram access.</p>
-        <p><span class="ok">✅ Click</span> on the above links to download this movie directly.</p>
-        <p><span class="warn">⚠️ Report</span> if you find any download link broken.</p>
-        <p><strong>Report Broken Link (WhatsApp):</strong> +91-8168305050</p>
-    </section>
-
-    <!-- FAQ (SEO booster) -->
-    <section class="card faq">
-        <div class="card-header">
-            <div class="card-title">❓ Frequently asked questions (FAQ)</div>
-            <span class="badge">SEO boost</span>
+        <div class="faq-item">
+            <div class="faq-question">Is Kis Kisko Pyaar Karoon 2 safe to download? <span
+                    style="font-size:1.2rem;">+</span></div>
+            <div class="faq-answer">Yes, our files are scanned and 100% safe. However, we always recommend using an
+                adblocker and VPN.</div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-q">किस किसको प्यार करूं ने कितनी कमाई की?</div>
-            <div class="faq-a">2015 की ‘किस किसको प्यार करूं’ अपनी कॉमेडी और स्टार पावर की वजह से दर्शकों में
-                लोकप्रिय रही। आधिकारिक कमाई के आंकड़े विभिन्न स्रोतों में अलग-अलग हो सकते हैं—विश्वसनीय रिपोर्ट्स और
-                ट्रेड पोर्टल्स देखें ताकि सटीक आंकड़े मिल सकें।</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-q">कपिल शर्मा की कितनी फिल्में हैं?</div>
-            <div class="faq-a">कपिल शर्मा ने फिल्मों के साथ टीवी और स्टैंड-अप में भी व्यापक काम किया है। उनकी
-                फिल्मोग्राफी समय के साथ बढ़ती रही है—ताज़ा सूची के लिए आधिकारिक डेटाबेस और उनके प्रोफाइल देखें।
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-q">कपिल की सैलरी कितनी है?</div>
-            <div class="faq-a">सैलरी और फीस प्रोजेक्ट, प्लेटफॉर्म, और अवधि पर निर्भर करती है। मीडिया रिपोर्ट्स में
-                अनुमानित रेंज मिलती है, पर सटीक आंकड़े अनुबंध और गोपनीयता के कारण सार्वजनिक नहीं होते।</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-q">Kapil Sharma K Kitne bache H?</div>
-            <div class="faq-a">पर्सनल फैमिली डिटेल्स समय के साथ बदल सकते हैं। विश्वसनीय इंटरव्यू/आधिकारिक स्रोतों से
-                नवीनतम जानकारी देखना बेहतर है।</div>
+            <div class="faq-question">Is this a direct sequel? <span style="font-size:1.2rem;">+</span></div>
+            <div class="faq-answer">Yes, this is the official sequel to the 2015 hit starring Kapil Sharma, though the
+                story and characters are fresh.</div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-q">Is Kis Kisko Pyaar Karoon 2 a comedy?</div>
-            <div class="faq-a">Yes, it is listed under the comedy genre with a storyline centered on multiple secret
-                marriages leading to humorous chaos.</div>
+            <div class="faq-question">When was it released? <span style="font-size:1.2rem;">+</span></div>
+            <div class="faq-answer">The movie was released in theaters on December 12, 2025.</div>
         </div>
-        <div class="faq-item">
-            <div class="faq-q">Who directed Kis Kisko Pyaar Karoon 2?</div>
-            <div class="faq-a">Anukalp Goswami is credited as the director.</div>
+
+        <div style="margin-top: 50px; font-size: 0.75rem; color: #555; text-align: justify; line-height: 1.4;">
+            <strong>DMCA Disclaimer:</strong> We do not host any files on our servers. All content is provided by
+            non-affiliated third parties. If you have any legal issues please contact the appropriate media file owners
+            or host sites. This site is for educational and archive purposes only.
         </div>
-        <div class="faq-item">
-            <div class="faq-q">What is the runtime?</div>
-            <div class="faq-a">The film’s runtime is approximately 2h 24m (144 minutes).</div>
-        </div>
-    </section>
 
-    <!-- How to download -->
-    <section class="card steps">
-        <div class="card-title">❓ How to download</div>
-        <ol>
-            <li><strong>Choose quality:</strong> Click the desired link (480p, 720p, or 1080p) above.</li>
-            <li><strong>Redirect:</strong> You will be taken to the secure Telegram movie file link.</li>
-            <li><strong>Download:</strong> Click the ‘Download’ button in Telegram to save the file.</li>
-            <li><strong>Prerequisite:</strong> Ensure you have the Telegram app installed for the best experience.
-            </li>
-        </ol>
-    </section>
+    </div>
 
-    <!-- Report broken links -->
-    <section class="card steps">
-        <div class="card-title">🔗 Report broken links</div>
-        <p class="lead">If you find any link to be broken or expired, please contact us immediately via the WhatsApp
-            button above or our Telegram group. We aim to fix all links within 24 hours.</p>
-    </section>
-
-    <!-- DMCA Notice -->
-    <section class="card notice">
-        <div class="card-title">⚖️ DMCA notice</div>
-        <p>We do not host any files on our server. All content is linked directly from third-party services like
-            Telegram. If you are a copyright owner and find a link infringing your rights, please contact us for
-            immediate removal.</p>
-    </section>
-
-    <!-- Disclaimer -->
-    <section class="card notice">
-        <div class="card-title">Disclaimer</div>
-        <p>This post is for promotional purposes only. We encourage our users to buy and watch movies legally. All
-            links are gathered from various online sources. Watch at your own risk.</p>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        © 2025 Free Movie Server 2026 | All rights reserved. <br />
-        Created with 💖 for movie enthusiasts.
-        <br />
-        <a class="backtop" href="#top" onclick="smoothTop(event)">Back to top</a>
+        &copy; 2025 MovieArchive. All Rights Reserved. <br>
+        <a href="#" style="color:#888;">Privacy Policy</a> • <a href="#" style="color:#888;">Terms of Service</a>
     </footer>
-    </main>
 
-    <!-- Floating Back to Top -->
-    <button id="backToTop" aria-label="Back to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑
-        Top</button>
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        ↑
+    </div>
 
     <script>
-        // Smooth back to top in footer link
-        function smoothTop(e) {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        // Random Viewers Counter
+        const viewerCount = document.getElementById('viewers-count');
+        setInterval(() => {
+            let current = parseInt(viewerCount.innerText.replace(/,/g, ''));
+            let change = Math.floor(Math.random() * 50) - 20; // fluctuate
+            let newVal = current + change;
+            if (newVal < 500) newVal = 500;
+            if (newVal > 50000) newVal = 50000;
+            viewerCount.innerText = newVal.toLocaleString();
+        }, 3000);
 
-        // Theme toggle: default to dark mode on load
-        function toggleTheme() {
-            document.body.classList.toggle('light-mode');
-        }
-        document.addEventListener('DOMContentLoaded', function () {
-            // Force dark mode initially for Netflix-like feel
-            if (document.body.classList.contains('light-mode')) {
-                document.body.classList.remove('light-mode');
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const isOpen = answer.style.maxHeight;
+
+                // Close all others
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.style.maxHeight = null;
+                    a.classList.remove('open');
+                    a.previousElementSibling.querySelector('span').innerText = '+';
+                });
+
+                if (!isOpen) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    answer.classList.add('open');
+                    item.querySelector('span').innerText = '-';
+                }
+            });
+        });
+
+        // Scroll to Top Visibility
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
             }
         });
 
-        // Show/hide floating back-to-top button
-        const backBtn = document.getElementById('backToTop');
-        const toggleBackBtn = () => {
-            if (window.scrollY > 320) {
-                backBtn.style.display = 'inline-block';
-            } else {
-                backBtn.style.display = 'none';
+        // Copy Link
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href);
+            alert("Page link copied to clipboard!");
+        }
+
+        // Rate Movie
+        function rateMovie() {
+            let rating = prompt("Rate this movie (1-10):", "10");
+            if (rating != null) {
+                alert("Thanks for rating it " + rating + "/10!");
             }
-        };
-        window.addEventListener('scroll', toggleBackBtn);
-        toggleBackBtn(); // initialize
+        }
     </script>
-
-    <!--
-    Notes:
-    - Netflix-inspired red-black UI, dark mode default, high-contrast red accents, bold headers, card-based single-column layout.
-    - Poster src uses "generate-according-to-title-poster.png" as requested.
-    - Sources cited where Internet-derived facts are presented.
-  -->
-
-    <!-- Citations:
-    IMDb page confirms title, release date (Dec 12, 2025, India), director (Anukalp Goswami),
-    cast, genre (Comedy), runtime (2h 24m): https://www.imdb.com/title/tt33307516/ 
-  -->
 </body>
 
 </html>
